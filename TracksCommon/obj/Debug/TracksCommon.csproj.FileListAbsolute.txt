@@ -1,0 +1,17 @@
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\TracksCommon.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\TracksCommon.pdb
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.ServiceBus.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\MySql.Data.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.pdb
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.xml
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.pdb
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Dapper.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Dapper.pdb
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Dapper.xml
+C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.csprojResolveAssemblyReference.cache
+C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.ServiceBus.pdb

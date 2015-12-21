@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{953399BC-C495-4B09-BE1F-5C6185A1171A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TracksCommon</RootNamespace>
+    <AssemblyName>TracksCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.40.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Siriona.Library">
+      <HintPath>..\..\..\..\..\..\..\Development\Connectivity\Siriona.XDC.Providers\Bin\Current\Siriona.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Siriona.Library.ServiceBus">
+      <HintPath>..\..\..\..\..\..\..\Development\Connectivity\Siriona.XDC.Providers\Bin\Current\Siriona.Library.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\IRadioBusiness.cs" />
+    <Compile Include="Business\RadioBusiness.cs" />
+    <Compile Include="Configurations\Configuration.cs" />
+    <Compile Include="Configurations\DeezerConfiguration.cs" />
+    <Compile Include="Configurations\IDeezerServerConfiguration.cs" />
+    <Compile Include="Configurations\IServerConfiguration.cs" />
+    <Compile Include="Configurations\ServerConfiguration.cs" />
+    <Compile Include="Entities\Album.cs" />
+    <Compile Include="Entities\Api.cs" />
+    <Compile Include="Entities\Artist.cs" />
+    <Compile Include="Entities\Current.cs" />
+    <Compile Include="Entities\DeezerPlaylist.cs" />
+    <Compile Include="Entities\DeezerUser.cs" />
+    <Compile Include="Entities\DeezerSearch.cs" />
+    <Compile Include="Entities\SearchFilter.cs" />
+    <Compile Include="Entities\Genre.cs" />
+    <Compile Include="Entities\Log.cs" />
+    <Compile Include="Entities\Track.cs" />
+    <Compile Include="Entities\Playlist.cs" />
+    <Compile Include="Entities\Search.cs" />
+    <Compile Include="Entities\SongFromRadio.cs" />
+    <Compile Include="Entities\SongFromDb.cs" />
+    <Compile Include="Events\SongAdded.cs" />
+    <Compile Include="Extensions\DatetimeExtension.cs" />
+    <Compile Include="Extensions\EnumerableExtension.cs" />
+    <Compile Include="Extensions\SerializerExtension.cs" />
+    <Compile Include="Filters\DeezerTitleFilter.cs" />
+    <Compile Include="Filters\DeezerArtistFilter.cs" />
+    <Compile Include="Filters\DeezerFullFilter.cs" />
+    <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="Filters\TrackManager.cs" />
+    <Compile Include="Gateways\IStatGateway.cs" />
+    <Compile Include="Gateways\LogGateway.cs" />
+    <Compile Include="Gateways\ApiGateway.cs" />
+    <Compile Include="Gateways\DeezerGateway.cs" />
+    <Compile Include="Gateways\ILogGateway.cs" />
+    <Compile Include="Gateways\IRadioGateway.cs" />
+    <Compile Include="Gateways\RadioGateway.cs" />
+    <Compile Include="Gateways\IApiGateway.cs" />
+    <Compile Include="Gateways\IDeezerGateway.cs" />
+    <Compile Include="Gateways\StatGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ISqlConnectionProvider.cs" />
+    <Compile Include="Providers\SqlConnectionProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

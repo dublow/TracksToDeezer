@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Stats</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script>
+        var stat = '{statday}';
+        var statJson = JSON.parse(stat);
+
+        var statrdo = '{statrdo}';
+        var statrdoJson = JSON.parse(statrdo);
+    </script>
+</head>
+<body>
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <script>
+        $(document).ready(function () {
+            //initChartJs();
+            initHighcharts(statJson);
+        });
+
+        var colors =
+            {
+                Fip: ["rgba(199,227,99,0.2)", "rgba(199,227,99,1)"],
+                Nova: ["rgba(243,94,94,0.2)", "rgba(243,94,94,1)"],
+                Fg: ["rgba(89,168,15,0.2)", "rgba(89,168,15,1)"],
+                Mfm: ["rgba(147,201,202,0.2)", "rgba(147,201,202,1)"],
+                Kcsn: ["rgba(112,78,58,0.2)", "rgba(112,78,58,1)"],
+                Hot97: ["rgba(241,57,109,0.2)", "rgba(241,57,109,1)"],
+                Klosfm: ["rgba(172,201,95,0.2)", "rgba(172,201,95,1)"]
+            };
+
+        var initChartJs = function() {
+            var chart = createChart(statJson);
+            var pie = createPie(statrdoJson);
+
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myLineChart = new Chart(ctx).Line(chart.data, chart.options);
+
+            var ctxPie = document.getElementById("myPie").getContext("2d");
+            var myPieChart = new Chart(ctxPie).Pie(pie);
+
+            setInterval(function () {
+                getDatas(function (data) {
+
+                    for (var i = 0; i < myLineChart.datasets.length; i++) {
+                        var currentDs = myLineChart.datasets[i];
+                        var newValue = data.day[currentDs.label];
+                        currentDs.points[currentDs.points.length - 1].value = newValue;
+                    }
+                    myLineChart.update();
+
+                    for (var i = 0; i < myPieChart.segments.length; i++) {
+                        var currentSg = myPieChart.segments[i];
+                        currentSg.value = data.rdo[currentSg.label];
+                    }
+                    myPieChart.update();
+                });
+
+            }, 10000);
+        }
+        var getDatas = function (cb) {
+            $.get("http://127.0.0.1/Dz/Stat/Async", function (data) {
+                var result = JSON.parse(data);
+                cb(result);
+            });
+        }
+        var createChart = function (dataServer) {
+            var labels = [];
+            var datas = {};
+            for (var i = 0; i < dataServer.length; i++) {
+                var currentItem = dataServer[i];
+                labels[i] = currentItem.date;
+
+                for (var item in currentItem) {
+                    if (currentItem.hasOwnProperty(item) && item !== 'date') {
+                        if (!$.isArray(datas[item]))
+                            datas[item] = [];
+                        datas[item].push(currentItem[item] === null ? 0 : currentItem[item]);
+                    }
+                }
+            }
+
+            var datasets = [];
+            for (var dot in datas) {
+                if (datas.hasOwnProperty(dot)) {
+                    datasets.push(createDataSets(dot, datas[dot], colors[dot]));
+                }
+            }
+
+            var data = {
+                labels: labels,
+                datasets: datasets
+            };
+
+            var options = { }
+
+            return { data: data, options: options };
+        }
+        var createDataSets = function (label, datas, color) {
+            return {
+                label: label,
+                fillColor: color[0],
+                strokeColor: color[1],
+                pointColor: color[1],
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: color[1],
+                data: datas
+            };
+        }
+        var createPie = function (dataServer) {
+            
+            var datas = [];
+            for (var item in dataServer) {
+                if (dataServer.hasOwnProperty(item)) {
+                    datas.push({
+                        value: dataServer[item],
+                        color: colors[item][1],
+                        highlight: colors[item][0],
+                        label: item
+                    });
+                }
+            }
+            datas.sort(function(a, b) { return b.value - a.value });
+            return datas;
+        }
+
+        var initHighcharts = function (dataServer) {
+            var cats = [];
+            var datas = {};
+            var series = [];
+
+            for (var i = 0; i < dataServer.length; i++) {
+                var currentItem = dataServer[i];
+                cats.push(currentItem.date);
+
+                for (var item in currentItem) {
+                    if (currentItem.hasOwnProperty(item) && item !== 'date') {
+                        if (!$.isArray(datas[item]))
+                            datas[item] = [];
+                        datas[item].push(currentItem[item] === null ? 0 : currentItem[item]);
+                    }
+                }
+            }
+
+            for (var serie in datas) {
+                if (datas.hasOwnProperty(serie)) {
+                    series.push({ name: serie, data: datas[serie] });
+                }
+            }
+            
+            $('#container').highcharts({
+                title: {
+                    text: 'Songs by day',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: 'TracksToDeezer',
+                    x: -20
+                },
+                xAxis: {
+                    categories: cats
+                },
+                yAxis: {
+                    title: {
+                        text: 'Total'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: ' Songs'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: series
+            });
+
+            setInterval(function () {
+                getDatas(function (data) {
+                    var hChart = $('#container').highcharts();
+                    for (var i = 0; i < hChart.series.length; i++) {
+                        var currentDs = hChart.series[i];
+                        var newValue = data.day[currentDs.name];
+                        currentDs.data[currentDs.points.length - 1].update(newValue);
+                    }
+                });
+
+            }, 120000);
+        }
+    </script>
+</body>
+</html>
