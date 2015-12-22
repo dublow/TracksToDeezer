@@ -58,11 +58,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeezerConfiguration.cs" />
     <Compile Include="Controllers\ConnectController.cs" />
     <Compile Include="Controllers\StatController.cs" />
     <Compile Include="Handlers\SongHandler.cs" />
-    <Compile Include="IDeezerServerConfiguration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\AuthContent.cs" />

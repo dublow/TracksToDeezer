@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TracksCommon.Entities;
 
 namespace TracksCommon.Configurations
 {
@@ -10,6 +11,7 @@ namespace TracksCommon.Configurations
         string SecretId { get; }
         string Callback { get; }
         string Playlist { get; }
-        List<string> Radios { get; } 
+        List<string> Radios { get; }
+        Dictionary<Endpoint, string> EndpointUrls { get; } 
     }
 }

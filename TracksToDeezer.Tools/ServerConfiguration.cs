@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using TracksCommon.Configurations;
+using TracksCommon.Entities;
 
 namespace TracksToDeezer.Tools
 {
@@ -30,6 +31,8 @@ namespace TracksToDeezer.Tools
                     .ToList();
             }
         }
+
+        public Dictionary<Endpoint, string> EndpointUrls { get; private set; }
 
         public string ConnectionString
         {

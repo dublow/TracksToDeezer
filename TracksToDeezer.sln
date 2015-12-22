@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracksFromRadio", "TracksFr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracksToDeezer.Tools", "TracksToDeezer.Tools\TracksToDeezer.Tools.csproj", "{FE122380-AE7F-48C3-8CEB-6DD2AAF23D38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracksToDeezer.Tests", "TracksToDeezer.Tests\TracksToDeezer.Tests.csproj", "{AB8B0D4D-21CF-4900-8B10-180140659261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FE122380-AE7F-48C3-8CEB-6DD2AAF23D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE122380-AE7F-48C3-8CEB-6DD2AAF23D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE122380-AE7F-48C3-8CEB-6DD2AAF23D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8B0D4D-21CF-4900-8B10-180140659261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8B0D4D-21CF-4900-8B10-180140659261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8B0D4D-21CF-4900-8B10-180140659261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8B0D4D-21CF-4900-8B10-180140659261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

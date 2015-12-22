@@ -9,6 +9,7 @@ using TracksCommon.Business;
 using TracksCommon.Entities;
 using TracksCommon.Filters;
 using TracksCommon.Gateways;
+using TracksCommon.Http;
 using TracksCommon.Providers;
 using TracksToDeezer.Handlers;
 
@@ -23,8 +24,10 @@ namespace TracksToDeezer
             var conf = new ServerConfiguration();
             var sql = new SqlConnectionProvider(conf.ConnectionString);
             var apiGateway = new ApiGateway(sql);
+            IHttpPoster httpPoster = new HttpPoster();
             ILogGateway logGateway = new LogGateway(sql);
-            var deezerGateway = new DeezerGateway(TrackManager.LoadDeezerTrackManagers());
+
+            var deezerGateway = new DeezerGateway(TrackManager.LoadDeezerTrackManagers(), httpPoster);
             IStatGateway statGateway = new StatGateway(sql);
 
             try

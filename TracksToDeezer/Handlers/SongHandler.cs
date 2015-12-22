@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Siriona.Library.EventModel;
 using TracksCommon.Business;
+using TracksCommon.Configurations;
 using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksCommon.Extensions;
@@ -40,12 +41,13 @@ namespace TracksToDeezer.Handlers
             {
                 var messageUpdate = "Not Found";
                 var api = apiGateway.GetApi("Deezer");
+                if(api == null)
+                    throw new ArgumentNullException("api", "Api not found.");
 
                 var search = deezerGateway.SearchTracks(message.artist, message.title);
                 
-                var trackId = "-1";
                 var genres = Enumerable.Empty<Genre>();
-                if (search != null)
+                if (!search.IsEmpty)
                 {
                     genres = deezerGateway.GetGenres(search.Album.Id);
 
@@ -61,16 +63,17 @@ namespace TracksToDeezer.Handlers
                     }
                     
                     messageUpdate = deezerGateway.AddToPlaylist(message.id, playlist.Id, search.Id, api.token, search.Type);
-                    trackId = search.Id;
 
                     var genreString = genres.Aggregate(new StringBuilder(),
                         (builder, genre) => builder.AppendFormat("{0}-", genre.Name));
-                    genreString.Length--;
+
+                    if(genreString.Length > 0)
+                        genreString.Length--;
 
                     Console.WriteLine("Song Added: [{0}][{1} - {2}][{3}]", message.media, search.Artist.Name, search.Title, genreString);
                 }
 
-                radioBusiness[message.media].Update(message.id, trackId, messageUpdate, genres);
+                radioBusiness[message.media].Update(message.id, search.Id, messageUpdate, genres);
             }
             catch (Exception ex)
             {

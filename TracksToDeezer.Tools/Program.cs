@@ -10,6 +10,7 @@ using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksCommon.Filters;
 using TracksCommon.Gateways;
+using TracksCommon.Http;
 using TracksCommon.Providers;
 
 namespace TracksToDeezer.Tools
@@ -28,8 +29,9 @@ namespace TracksToDeezer.Tools
             if (args.Any(x => x == "u"))
             {
                 var tracksManager = TrackManager.LoadDeezerTrackManagers();
+                var httpPoster = new HttpPoster();
                 var songs = radio.GetAllSongIsNull();
-                UpdateTitle(radio, tracksManager, songs);
+                UpdateTitle(radio, tracksManager, songs, httpPoster);
                 Console.ReadLine();
             }
            
@@ -44,8 +46,9 @@ namespace TracksToDeezer.Tools
             if (args.Any(x => x == "g"))
             {
                 var tracksManager = TrackManager.LoadDeezerTrackManagers();
+                var httpPoster = new HttpPoster();
                 var songs = radio.GetAllHasNoGenre();
-                UpdateGenre(radio, tracksManager, songs);
+                UpdateGenre(radio, tracksManager, songs, httpPoster);
                 Console.ReadLine();
             }
         }
@@ -56,9 +59,9 @@ namespace TracksToDeezer.Tools
                     .ToDictionary<string, string, IRadioGateway>(radio => radio, radio => new RadioGateway(sql, radio));
         }
 
-        async static void UpdateTitle(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs)
+        async static void UpdateTitle(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster)
         {
-            var deezer = new DeezerGateway(trackManagers);
+            var deezer = new DeezerGateway(trackManagers, httpPoster);
             foreach (var songFromDb in songs)
             {
                 var result = deezer.SearchTracks(songFromDb.artiste, songFromDb.title);
@@ -70,9 +73,9 @@ namespace TracksToDeezer.Tools
             
         }
 
-        async static void UpdateGenre(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs)
+        async static void UpdateGenre(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster)
         {
-            var deezer = new DeezerGateway(trackManagers);
+            var deezer = new DeezerGateway(trackManagers, httpPoster);
             foreach (var songFromDb in songs)
             {
                 var track = deezer.GetTrack(songFromDb.trackId);

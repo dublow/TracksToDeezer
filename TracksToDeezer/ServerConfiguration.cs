@@ -4,6 +4,8 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TracksCommon.Configurations;
+using TracksCommon.Entities;
 
 namespace TracksToDeezer
 {
@@ -31,6 +33,8 @@ namespace TracksToDeezer
                     .ToList();
             }
         }
+
+        public Dictionary<Endpoint, string> EndpointUrls { get; private set; }
 
         public string ConnectionString
         {
