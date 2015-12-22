@@ -7,24 +7,26 @@ using Newtonsoft.Json.Linq;
 using TracksCommon.Entities;
 using TracksCommon.Filters;
 using TracksCommon.Http;
+using TracksCommon.Search;
 
 namespace TracksCommon.Gateways
 {
     public class DeezerGateway : IDeezerGateway
     {
-        private readonly IEnumerable<TrackManager> trackManagers;
+        private readonly IEnumerable<ISearch> searchs;
         private readonly IHttpPoster httpPoster;
+        private readonly Dictionary<Endpoint, string> endpoints;
 
-        public DeezerGateway(IEnumerable<TrackManager> trackManagers, IHttpPoster httpPoster)
+        public DeezerGateway(IEnumerable<ISearch> searchs, IHttpPoster httpPoster, Dictionary<Endpoint, string> endpoints)
         {
-            this.trackManagers = trackManagers;
+            this.searchs = searchs;
             this.httpPoster = httpPoster;
+            this.endpoints = endpoints;
         }
 
         public string GetToken(string appId, string appSecret, string code)
         {
-            var tokenUrl = string.Format("https://connect.deezer.com/oauth/access_token.php?app_id={0}&secret={1}&code={2}",
-                    appId, appSecret, code);
+            var tokenUrl = string.Format(endpoints[Endpoint.AccessToken], appId, appSecret, code);
 
             var result = httpPoster.Request(tokenUrl, "Post");
 
@@ -40,20 +42,18 @@ namespace TracksCommon.Gateways
 
         public DeezerUser Me(string accessToken)
         {
-            var url = string.Format("http://api.deezer.com/user/me?access_token={0}", accessToken);
+            var url = string.Format(endpoints[Endpoint.Me], accessToken);
             return httpPoster.RequestWithDeserialization<DeezerUser>(url, "GET");
         }
   
-        public Search SearchTracks(string artist, string title)
+        public DeezerSearchItem SearchTracks(string artist, string title)
         {
-            Search result = Search.Empty;
+            DeezerSearchItem result = DeezerSearchItem.Empty;
 
-            foreach (var trackManager in trackManagers)
+            foreach (var search in searchs)
             {
-                var url = trackManager.GetUrl(artist, title);
-
-                var deezerSearch = httpPoster.RequestWithDeserialization<DeezerSearch>(url, "GET");
-                result = trackManager.Filtering(deezerSearch, artist, title);
+                var deezerSearch = httpPoster.RequestWithDeserialization<DeezerSearch>(search.GetUrl(artist, title), "GET");
+                result = search.Filtering(deezerSearch, artist, title);
 
                 if(result != null)
                     break;
@@ -62,17 +62,17 @@ namespace TracksCommon.Gateways
             return result;
         }
 
-        public Search GetTrack(string trackId)
+        public DeezerSearchItem GetTrack(string trackId)
         {
-            var url = string.Format("https://api.deezer.com/track/{0}", trackId);
-            var result = httpPoster.RequestWithDeserialization<Search>(url, "GET");
+            var url = string.Format(endpoints[Endpoint.Track], trackId);
+            var result = httpPoster.RequestWithDeserialization<DeezerSearchItem>(url, "GET");
 
             return result;
         }
 
         public Playlist GetPlaylist(string accessToken, string name)
         {
-            var url = string.Format("http://api.deezer.com/user/me/playlists?access_token={0}", accessToken);
+            var url = string.Format(endpoints[Endpoint.GetPlaylist], accessToken);
             var playlists = httpPoster.RequestWithDeserialization<DeezerPlaylist>(url, "GET");
 
             return (from item in playlists.Data where item.Title == name select item).SingleOrDefault();
@@ -80,13 +80,13 @@ namespace TracksCommon.Gateways
 
         public Playlist CreatePlaylist(string accessToken, string name)
         {
-            var url = string.Format("http://api.deezer.com/user/me/playlists?access_token={0}&title={1}", accessToken, name);
+            var url = string.Format(endpoints[Endpoint.CreatePlaylist], accessToken, name);
             return httpPoster.RequestWithDeserialization<Playlist>(url, "POST");
         }
 
         public string AddToPlaylist(int id, string playlistId, string trackId, string accessToken, string searchMessage)
         {
-            var url = string.Format("https://api.deezer.com/playlist/{0}/tracks?request_method=POST&access_token={1}&songs={2}", playlistId, accessToken, trackId);
+            var url = string.Format(endpoints[Endpoint.AddToPlaylist], playlistId, accessToken, trackId);
 
             var result = httpPoster.Request(url, "POST");
             return string.Format("{0} - Playlist: {1}", searchMessage, result);
@@ -94,7 +94,7 @@ namespace TracksCommon.Gateways
 
         public IEnumerable<Genre> GetGenres(string albumId)
         {
-            var url = string.Format("https://api.deezer.com/album/{0}", albumId);
+            var url = string.Format(endpoints[Endpoint.Album], albumId);
             var response = httpPoster.Request(url, "GET");
             var jObject = JObject.Parse(response);
 

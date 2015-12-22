@@ -2,8 +2,8 @@
 
 namespace TracksCommon.Entities
 {
-    public class DeezerSearch
+    public class DeezerSearch : IDeserializer
     {
-        public IEnumerable<Search> Data { get; set; }
+        public IEnumerable<DeezerSearchItem> Data { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace TracksCommon.Filters
 {
     public class DeezerTitleFilter : IFilter
     {
-        public Search Create(DeezerSearch deezerSearch, string artist, string title, string message)
+        public DeezerSearchItem Create(DeezerSearch deezerSearch, string artist, string title, string message)
         {
             var result = (from item in deezerSearch.Data
                           where String.Equals(item.Title, title, StringComparison.CurrentCultureIgnoreCase)

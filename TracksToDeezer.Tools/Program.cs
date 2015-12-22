@@ -12,6 +12,7 @@ using TracksCommon.Filters;
 using TracksCommon.Gateways;
 using TracksCommon.Http;
 using TracksCommon.Providers;
+using TracksCommon.Search;
 
 namespace TracksToDeezer.Tools
 {
@@ -21,17 +22,25 @@ namespace TracksToDeezer.Tools
         {
             
             var conf = new ServerConfiguration();
+            var endpoints = conf.Endpoints;
             var sql = new SqlConnectionProvider(conf.ConnectionString);
             var radios = LoadRadios(sql, conf.Radios);
             var radio = radios["Kcsn"];
 
+            var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerArtistFilter(), new DeezerArtistFilter() };
+            var searchs = new List<ISearch>
+            {
+                new FullSearch(endpoints[Endpoint.FullSearch], filters),
+                new TitleSearch(endpoints[Endpoint.FullSearch], filters),
+                new ArtistSearch(endpoints[Endpoint.FullSearch], filters)
+            };
+
             // Get Trackid when trackid is null in DB
             if (args.Any(x => x == "u"))
             {
-                var tracksManager = TrackManager.LoadDeezerTrackManagers();
                 var httpPoster = new HttpPoster();
                 var songs = radio.GetAllSongIsNull();
-                UpdateTitle(radio, tracksManager, songs, httpPoster);
+                UpdateTitle(radio, searchs, songs, httpPoster, endpoints);
                 Console.ReadLine();
             }
            
@@ -45,10 +54,9 @@ namespace TracksToDeezer.Tools
             // Get Song from db for getting genre
             if (args.Any(x => x == "g"))
             {
-                var tracksManager = TrackManager.LoadDeezerTrackManagers();
                 var httpPoster = new HttpPoster();
                 var songs = radio.GetAllHasNoGenre();
-                UpdateGenre(radio, tracksManager, songs, httpPoster);
+                UpdateGenre(radio, searchs, songs, httpPoster, endpoints);
                 Console.ReadLine();
             }
         }
@@ -59,9 +67,9 @@ namespace TracksToDeezer.Tools
                     .ToDictionary<string, string, IRadioGateway>(radio => radio, radio => new RadioGateway(sql, radio));
         }
 
-        async static void UpdateTitle(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster)
+        async static void UpdateTitle(IRadioGateway radio, IEnumerable<ISearch> searchs, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster, Dictionary<Endpoint, string> endpoints)
         {
-            var deezer = new DeezerGateway(trackManagers, httpPoster);
+            var deezer = new DeezerGateway(searchs, httpPoster, endpoints);
             foreach (var songFromDb in songs)
             {
                 var result = deezer.SearchTracks(songFromDb.artiste, songFromDb.title);
@@ -73,9 +81,9 @@ namespace TracksToDeezer.Tools
             
         }
 
-        async static void UpdateGenre(IRadioGateway radio, IEnumerable<TrackManager> trackManagers, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster)
+        async static void UpdateGenre(IRadioGateway radio, IEnumerable<ISearch> searchs, IEnumerable<SongFromDb> songs, IHttpPoster httpPoster, Dictionary<Endpoint, string> endpoints)
         {
-            var deezer = new DeezerGateway(trackManagers, httpPoster);
+            var deezer = new DeezerGateway(searchs, httpPoster, endpoints);
             foreach (var songFromDb in songs)
             {
                 var track = deezer.GetTrack(songFromDb.trackId);

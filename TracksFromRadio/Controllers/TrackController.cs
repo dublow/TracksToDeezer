@@ -6,7 +6,7 @@ using System.Net;
 using System.Text.RegularExpressions;
 using Siriona.Library.HttpServices;
 using Siriona.Library.ServiceBus;
-using TracksCommon.Configurations;
+using TracksCommon.Configurations.Radio;
 using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksCommon.Gateways;
@@ -19,20 +19,20 @@ namespace TracksFromRadio.Controllers
         private readonly IRadioGateway radioGateway;
         private readonly ILogGateway logGateway;
         private readonly IClientBus bus;
-        private readonly IServerConfiguration serverConfiguration;
+        private readonly IRadioConfiguration radioConfiguration;
         private readonly string radioUrl;
         private readonly List<Regex> regexArtist;
         private readonly List<Regex> regexTitle;
 
-        public TrackController(IRadioGateway radioGateway, ILogGateway logGateway, IClientBus bus, IServerConfiguration serverConfiguration)
+        public TrackController(IRadioGateway radioGateway, ILogGateway logGateway, IClientBus bus, IRadioConfiguration radioConfiguration)
         {
             this.radioGateway = radioGateway;
             this.logGateway = logGateway;
             this.bus = bus;
-            this.serverConfiguration = serverConfiguration;
-            this.radioUrl = serverConfiguration.RadioUrl;
-            this.regexArtist = new List<Regex>(serverConfiguration.RegexArtist.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(x => new Regex(x.Trim())));
-            this.regexTitle = new List<Regex>(serverConfiguration.RegexTitle.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(x => new Regex(x.Trim())));
+            this.radioConfiguration = radioConfiguration;
+            this.radioUrl = radioConfiguration.RadioUrl;
+            this.regexArtist = new List<Regex>(radioConfiguration.RegexArtist.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(x => new Regex(x.Trim())));
+            this.regexTitle = new List<Regex>(radioConfiguration.RegexTitle.Split(new[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(x => new Regex(x.Trim())));
         }
         public ActionResult Current()
         {
@@ -80,7 +80,7 @@ namespace TracksFromRadio.Controllers
         private SongFromRadio GetSong()
         {
             var response = GetResponse();
-            if(serverConfiguration.Debug)
+            if(radioConfiguration.Debug)
                 logGateway.AddLog(Log.Info(response));
 
             response = response.Replace("\\u003c", "<");

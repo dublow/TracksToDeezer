@@ -8,7 +8,7 @@ using Siriona.Library.Hosting;
 using Siriona.Library.HttpServices;
 using Siriona.Library.Injection;
 using Siriona.Library.ServiceBus;
-using TracksCommon.Configurations;
+using TracksCommon.Configurations.Radio;
 using TracksCommon.Gateways;
 using TracksCommon.Providers;
 using TracksFromRadio.Controllers;
@@ -19,7 +19,7 @@ namespace TracksFromRadio
     {
         static void Main(string[] args)
         {
-            var conf = new ServerConfiguration();
+            var conf = new RadioConfiguration();
             var sql = new SqlConnectionProvider(conf.ConnectionString);
             var radioGateway = new RadioGateway(sql, conf.ServiceName);
             var logGateway = new LogGateway(sql);

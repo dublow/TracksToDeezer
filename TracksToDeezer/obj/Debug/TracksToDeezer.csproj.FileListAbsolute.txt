@@ -24,3 +24,21 @@ C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToD
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Views\Stat.html
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Views\chart.js
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\TracksToDeezer.exe.config
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\obj\Debug\TracksToDeezer.exe
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\obj\Debug\TracksToDeezer.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Views\Stat.html
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Views\chart.js
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\TracksToDeezer.exe
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\TracksToDeezer.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\TracksCommon.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Dapper.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\TracksCommon.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Dapper.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Dapper.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\obj\Debug\TracksToDeezer.csprojResolveAssemblyReference.cache
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll

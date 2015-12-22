@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Moq;
-using TracksCommon.Configurations;
+using TracksCommon.Configurations.Deezer;
+using TracksCommon.Entities;
 
 namespace TracksToDeezer.Tests.Mocked
 {
@@ -30,6 +31,7 @@ namespace TracksToDeezer.Tests.Mocked
                 conf.Setup(x => x.SecretId).Returns("");
                 conf.Setup(x => x.ServiceName).Returns("");
                 conf.Setup(x => x.Radios).Returns(new List<string>());
+                conf.Setup(x => x.Endpoints).Returns(new Dictionary<Endpoint, string>());
 
                 return conf.Object;
             }
@@ -68,6 +70,11 @@ namespace TracksToDeezer.Tests.Mocked
         public static void SetRadios(List<string> radios)
         {
             conf.Setup(x => x.Radios).Returns(radios);
+        }
+
+        public static void SetEndpoints(Dictionary<Endpoint, string> endpoints)
+        {
+            conf.Setup(x => x.Endpoints).Returns(endpoints);
         }
     }
 }

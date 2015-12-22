@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace TracksCommon.Entities
 {
-    public class DeezerPlaylist
+    public class DeezerPlaylist : IDeserializer
     {
         public IEnumerable<Playlist> Data { get; set; }
     }

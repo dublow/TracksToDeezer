@@ -1,0 +1,531 @@
+﻿{
+  "id": "113497",
+  "title": "The Music Of John Barry",
+  "upc": "5099749450721",
+  "link": "https://www.deezer.com/album/113497",
+  "share": "http://www.deezer.com/album/113497?utm_source=deezer&utm_content=album-113497&utm_term=4934039_1450825054&utm_medium=web",
+  "cover": "https://api.deezer.com/album/113497/image",
+  "cover_small": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/56x56-000000-80-0-0.jpg",
+  "cover_medium": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/250x250-000000-80-0-0.jpg",
+  "cover_big": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/500x500-000000-80-0-0.jpg",
+  "genre_id": 132,
+  "genres": {
+    "data": [
+      {
+        "id": 132,
+        "name": "Pop",
+        "picture": "https://api.deezer.com/genre/132/image",
+        "type": "genre"
+      },
+      {
+        "id": 173,
+        "name": "Films/Jeux vidéo",
+        "picture": "https://api.deezer.com/genre/173/image",
+        "type": "genre"
+      },
+      {
+        "id": 174,
+        "name": "Musiques de films",
+        "picture": "https://api.deezer.com/genre/174/image",
+        "type": "genre"
+      }
+    ]
+  },
+  "label": "Columbia",
+  "nb_tracks": 24,
+  "duration": 4161,
+  "fans": 1363,
+  "rating": 0,
+  "release_date": "1996-02-22",
+  "record_type": "album",
+  "available": true,
+  "tracklist": "https://api.deezer.com/album/113497/tracks",
+  "explicit_lyrics": false,
+  "contributors": [
+    {
+      "id": 2466,
+      "name": "John Barry",
+      "link": "https://www.deezer.com/artist/2466",
+      "share": "http://www.deezer.com/artist/2466?utm_source=deezer&utm_content=artist-2466&utm_term=4934039_1450825054&utm_medium=web",
+      "picture": "https://api.deezer.com/artist/2466/image",
+      "picture_small": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/500x500-000000-80-0-0.jpg",
+      "radio": true,
+      "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+      "type": "artist",
+      "role": "Main"
+    }
+  ],
+  "artist": {
+    "id": "2466",
+    "name": "John Barry",
+    "picture": "https://api.deezer.com/artist/2466/image",
+    "picture_small": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/250x250-000000-80-0-0.jpg",
+    "picture_big": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/500x500-000000-80-0-0.jpg",
+    "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+    "type": "artist"
+  },
+  "type": "album",
+  "tracks": {
+    "data": [
+      {
+        "id": "1037307",
+        "readable": true,
+        "title": "You Only Live Twice (Instrumental)",
+        "title_short": "You Only Live Twice",
+        "title_version": "(Instrumental)",
+        "link": "https://www.deezer.com/track/1037307",
+        "duration": "156",
+        "rank": "310568",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/05451bed00d2d9187a57dbcba0056f64-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037309",
+        "readable": true,
+        "title": "Born Free (Album Version)",
+        "title_short": "Born Free (Album Version)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037309",
+        "duration": "166",
+        "rank": "304289",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-4.deezer.com/stream/4757d90ad41833839b7b12ce0fcfde07-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037311",
+        "readable": true,
+        "title": "Goldfinger",
+        "title_short": "Goldfinger",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037311",
+        "duration": "261",
+        "rank": "308143",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-6.deezer.com/stream/690ccb24710871aeef8e2d16dc4afb6e-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037313",
+        "readable": true,
+        "title": "The Whisperers",
+        "title_short": "The Whisperers",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037313",
+        "duration": "158",
+        "rank": "292773",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/51d6a6721c35d93f805d651d58936548-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037314",
+        "readable": true,
+        "title": "From Russia with Love",
+        "title_short": "From Russia with Love",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037314",
+        "duration": "154",
+        "rank": "299956",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/f702dac02389f9568e23dbb56e613d43-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037316",
+        "readable": true,
+        "title": "Wednesday's Child (From The Picture 'The Quiller Memorandum')",
+        "title_short": "Wednesday's Child (From The Picture 'The Quiller Memorandum')",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037316",
+        "duration": "131",
+        "rank": "308307",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/38fa55de8113b89c1bb58caad9e62a27-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037318",
+        "readable": true,
+        "title": "Space March (Capsule In Space)",
+        "title_short": "Space March (Capsule In Space)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037318",
+        "duration": "163",
+        "rank": "314617",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-b.deezer.com/stream/b47125c7278055d84e79aeb08a6be426-2.mp3",
+        "artist": {
+          "id": "381904",
+          "name": "John Barry Orchestra",
+          "tracklist": "https://api.deezer.com/artist/381904/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037319",
+        "readable": true,
+        "title": "The Girl with the Sun in Her Hair",
+        "title_short": "The Girl with the Sun in Her Hair",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037319",
+        "duration": "173",
+        "rank": "300902",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2990aaf315e17081ef3481ee0efb8bd9-3.mp3",
+        "artist": {
+          "id": "381904",
+          "name": "John Barry Orchestra",
+          "tracklist": "https://api.deezer.com/artist/381904/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037321",
+        "readable": true,
+        "title": "Thunderball",
+        "title_short": "Thunderball",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037321",
+        "duration": "193",
+        "rank": "307139",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/341f462628dca9759126ba0944eed196-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037323",
+        "readable": true,
+        "title": "Dutchman",
+        "title_short": "Dutchman",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037323",
+        "duration": "171",
+        "rank": "289012",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/d536e864dc88ae3c0a7f3dd5e782ac36-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037325",
+        "readable": true,
+        "title": "The Wrong Box",
+        "title_short": "The Wrong Box",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037325",
+        "duration": "152",
+        "rank": "307965",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/5a49bf61e15524906009b6cf52520870-4.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037326",
+        "readable": true,
+        "title": "The James Bond Theme",
+        "title_short": "The James Bond Theme",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037326",
+        "duration": "172",
+        "rank": "402201",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/55a1ff5ce480ebc6a0bb6bf64e75f62e-3.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037328",
+        "readable": true,
+        "title": "007",
+        "title_short": "007",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037328",
+        "duration": "133",
+        "rank": "297783",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-7.deezer.com/stream/7365ae6c72fa71f111d4e51977d5a9a0-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037330",
+        "readable": true,
+        "title": "Mister Kiss Kiss Bang Bang",
+        "title_short": "Mister Kiss Kiss Bang Bang",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037330",
+        "duration": "192",
+        "rank": "297662",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/1c9571ca5cb76d8df23a25a73642a5d5-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037332",
+        "readable": true,
+        "title": "Main Title: The Chase (Alternate Version)",
+        "title_short": "Main Title: The Chase",
+        "title_version": "(Alternate Version)",
+        "link": "https://www.deezer.com/track/1037332",
+        "duration": "195",
+        "rank": "307332",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-7.deezer.com/stream/711f7ac52ec01e3efc0ad731faccbd25-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037334",
+        "readable": true,
+        "title": "Theme From 'King Rat' (Album Version)",
+        "title_short": "Theme From 'King Rat' (Album Version)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037334",
+        "duration": "254",
+        "rank": "298922",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-a.deezer.com/stream/a1f80a287578b9eceedb01d970fadf48-3.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037336",
+        "readable": true,
+        "title": "The Knack (Album Version)",
+        "title_short": "The Knack (Album Version)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037336",
+        "duration": "174",
+        "rank": "293338",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/084e8aeaa0d7ff72b7e6166758d265ba-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037337",
+        "readable": true,
+        "title": "Seance On A Wet Afternoon",
+        "title_short": "Seance On A Wet Afternoon",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037337",
+        "duration": "140",
+        "rank": "311362",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/0222fc47f9eb72d009ebe1dd07710743-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037339",
+        "readable": true,
+        "title": "The Ipcress File",
+        "title_short": "The Ipcress File",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037339",
+        "duration": "231",
+        "rank": "310021",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-8.deezer.com/stream/8e71b38c518e196dc2ac0abcb18e198a-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037341",
+        "readable": true,
+        "title": "Midnight Cowboy",
+        "title_short": "Midnight Cowboy",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037341",
+        "duration": "154",
+        "rank": "306726",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/35ee08921417b7d96f0008bd4390e0c2-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037342",
+        "readable": true,
+        "title": "Theme From \"Romance For Guitar And Orchestra\"",
+        "title_short": "Theme From \"Romance For Guitar And Orchestra\"",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037342",
+        "duration": "156",
+        "rank": "309647",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/24462b86edfd94bc8d62cf479248c5c2-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037344",
+        "readable": true,
+        "title": "On Her Majesty's Secret Service (Album Version)",
+        "title_short": "On Her Majesty's Secret Service (Album Version)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037344",
+        "duration": "160",
+        "rank": "314231",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/dc90ea27b8cc39616dd34f927cd1cb15-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037346",
+        "readable": true,
+        "title": "Theme From \"The Appointment\"",
+        "title_short": "Theme From \"The Appointment\"",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037346",
+        "duration": "156",
+        "rank": "304820",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/df9b92049a0f98a47f534015259ddafe-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "1037348",
+        "readable": true,
+        "title": "The Lion In Winter (Album Version)",
+        "title_short": "The Lion In Winter (Album Version)",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/1037348",
+        "duration": "166",
+        "rank": "300598",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-4.deezer.com/stream/4d40808768c2987f825a2322fb03eee9-2.mp3",
+        "artist": {
+          "id": "2466",
+          "name": "John Barry",
+          "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      }
+    ]
+  }
+}

@@ -1,11 +1,12 @@
 ﻿using System.IO;
 using System.Net;
+using TracksCommon.Entities;
 
 namespace TracksCommon.Http
 {
     public class HttpPoster : IHttpPoster
     {
-        public T RequestWithDeserialization<T>(string url, string method)
+        public T RequestWithDeserialization<T>(string url, string method) where T : IDeserializer
         {
             string result = Request(url, method);
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(result);

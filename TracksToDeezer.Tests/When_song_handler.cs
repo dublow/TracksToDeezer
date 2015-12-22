@@ -9,6 +9,9 @@ using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksToDeezer.Handlers;
 using TracksToDeezer.Tests.Mocked;
+using TracksCommon.Gateways;
+using TracksCommon.Search;
+using TracksCommon.Filters;
 
 namespace TracksToDeezer.Tests
 {
@@ -22,11 +25,25 @@ namespace TracksToDeezer.Tests
             var conf = MockedDeezerServiceConfiguration.Get;
             var apiGateway = MockedApiGateway.Get;
             var logGateway = MockedLogGateway.Get;
-            var deezerGateway = MockedDeezerGateway.Get;
-            var radioBusiness = MockedRadioBusiness.Get;
-            var dicBusiness = new Dictionary<string, IRadioBusiness> {{"Fip", radioBusiness}};
+            var radioBusiness = new Dictionary<string, IRadioBusiness> {{"Fip", MockedRadioBusiness.Get } };
+            var httpPoster = MockedHttpPoster.Get;
+            var endpoints = new Dictionary<Endpoint, string>
+            {
+                { Endpoint.AccessToken, "" },
+                { Endpoint.Me, "" },
+                { Endpoint.GetPlaylist, "" },
+                { Endpoint.CreatePlaylist, "Datas\\playlist.json" },
+                { Endpoint.AddToPlaylist, "Datas\\addtoplaylist.txt" },
+                { Endpoint.Album, "Datas\\album.json" },
+                { Endpoint.Track, "" },
+                { Endpoint.FullSearch, "Datas\\fullsearch.json" },
+                { Endpoint.ArtistSearch, "" },
+                { Endpoint.TitleSearch, "" },
+            };
 
             // Setup
+            apiGateway.AddApi("Deezer", "000000000", "12345", "Nicolas", "Delfour");
+
             MockedDeezerServiceConfiguration.SetAppId("160065");
             MockedDeezerServiceConfiguration.SetCallback("http://localhost.com");
             MockedDeezerServiceConfiguration.SetConnectionString("cnx");
@@ -34,36 +51,33 @@ namespace TracksToDeezer.Tests
             MockedDeezerServiceConfiguration.SetRadios(new List<string> { "Fip", "Nova", "Mfm", "Fg", "Kcsn", "Hot97", "Klosfm" });
             MockedDeezerServiceConfiguration.SetSecretId("3057u789dd92474e6e048cb7d7");
             MockedDeezerServiceConfiguration.SetServiceName("Dz");
+            MockedDeezerServiceConfiguration.SetEndpoints(endpoints);
 
-            var album = new Album { Id = "14678" };
-            var artist = new Artist { Name = "JOHN BARRY" };
-            var search = new Search
+            var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerTitleFilter(), new DeezerArtistFilter() };
+            var searchs = new List<ISearch>
             {
-                Album = album,
-                Artist = artist,
-                Id = "1037339",
-                Title = "THE IPCRESS FILE",
-                Type = "Search: Full Filter: Full - Playlist: true"
+                new FullSearch(conf.Endpoints[Endpoint.FullSearch], filters),
+                new TitleSearch(conf.Endpoints[Endpoint.TitleSearch], filters),
+                new ArtistSearch(conf.Endpoints[Endpoint.ArtistSearch], filters)
             };
 
-            MockedDeezerGateway.SetToken(conf.AppId, conf.SecretId, "123", "000000000");
-            MockedDeezerGateway.SetGenre("14678", new List<Genre> {new Genre {Id = "12", Name = "Pop"}});
-            MockedDeezerGateway.SetMe("000000000", new DeezerUser { Firstname = "Nicolas", Id = "12345", Lastname = "Delfour" });
-            MockedDeezerGateway.SetTrack("13", "JOHN BARRY", "THE IPCRESS FILE", search);
+            var deezerGateway = new DeezerGateway(searchs, httpPoster, conf.Endpoints);
 
-            apiGateway.AddApi("Deezer", "000000000", "12345", "Nicolas", "Delfour");
-
-            var songHandler = new SongHandler(conf, apiGateway, deezerGateway, logGateway, dicBusiness);
+            var songHandler = new SongHandler(conf, apiGateway, deezerGateway, logGateway, radioBusiness);
             songHandler.Handle(new SongAdded(13, "Fip", "JOHN BARRY", "THE IPCRESS FILE"));
 
+            // Result
             var tupleBusiness = MockedRadioBusiness.radioTable.First();
-            var genre = tupleBusiness.Item4.First();
+            var genrePop = tupleBusiness.Item4.First(x=>x.Id == "132");
+            var genreJeuVideo = tupleBusiness.Item4.First(x => x.Id == "173");
+            var genreFilm = tupleBusiness.Item4.First(x => x.Id == "174");
 
             Assert.AreEqual(tupleBusiness.Item1, 13);
             Assert.AreEqual(tupleBusiness.Item2, "1037339");
             Assert.AreEqual(tupleBusiness.Item3, "Search: Full Filter: Full - Playlist: true");
-            Assert.AreEqual(genre.Id, "12");
-            Assert.AreEqual(genre.Name, "Pop");
+            Assert.AreEqual(genrePop.Name, "Pop");
+            Assert.AreEqual(genreJeuVideo.Name, "Films/Jeux vidéo");
+            Assert.AreEqual(genreFilm.Name, "Musiques de films");
         }
 
         [Test]
@@ -88,7 +102,7 @@ namespace TracksToDeezer.Tests
 
             var album = new Album { Id = "14678" };
             var artist = new Artist { Name = "JOHN BARRY" };
-            var search = new Search
+            var search = new DeezerSearchItem
             {
                 Album = album,
                 Artist = artist,

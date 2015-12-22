@@ -14,5 +14,9 @@ namespace TracksCommon.Entities
         CreatePlaylist,
         AddToPlaylist,
         Album,
+        Track,
+        FullSearch,
+        ArtistSearch,
+        TitleSearch
     }
 }

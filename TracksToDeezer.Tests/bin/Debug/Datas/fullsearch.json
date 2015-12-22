@@ -1,0 +1,39 @@
+﻿{
+  "data": [
+    {
+      "id": "1037339",
+      "readable": true,
+      "title": "The Ipcress File",
+      "title_short": "The Ipcress File",
+      "title_version": "",
+      "link": "https://www.deezer.com/track/1037339",
+      "duration": "231",
+      "rank": "310021",
+      "explicit_lyrics": false,
+      "preview": "http://e-cdn-preview-8.deezer.com/stream/8e71b38c518e196dc2ac0abcb18e198a-2.mp3",
+      "artist": {
+        "id": "2466",
+        "name": "John Barry",
+        "link": "https://www.deezer.com/artist/2466",
+        "picture": "https://api.deezer.com/artist/2466/image",
+        "picture_small": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/250x250-000000-80-0-0.jpg",
+        "picture_big": "https://cdns-images.dzcdn.net/images/artist/4a2f9ac1767fc9d32ada234a7d1c97da/500x500-000000-80-0-0.jpg",
+        "tracklist": "https://api.deezer.com/artist/2466/top?limit=50",
+        "type": "artist"
+      },
+      "album": {
+        "id": "113497",
+        "title": "The Music Of John Barry",
+        "cover": "https://api.deezer.com/album/113497/image",
+        "cover_small": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/56x56-000000-80-0-0.jpg",
+        "cover_medium": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/250x250-000000-80-0-0.jpg",
+        "cover_big": "https://cdns-images.dzcdn.net/images/cover/f3f576c20e1acbab9f4ebfe5838f8803/500x500-000000-80-0-0.jpg",
+        "tracklist": "https://api.deezer.com/album/113497/tracks",
+        "type": "album"
+      },
+      "type": "track"
+    }
+  ],
+  "total": 1
+}

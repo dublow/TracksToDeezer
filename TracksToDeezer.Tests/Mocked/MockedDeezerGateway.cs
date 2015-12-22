@@ -15,7 +15,7 @@ namespace TracksToDeezer.Tests.Mocked
         private readonly static Mock<IDeezerGateway> deezerGateway;
         private readonly static List<Tuple<string, string, string, string>> tokenTable;
         private readonly static List<Tuple<string, DeezerUser>> meTable;
-        private static readonly List<Tuple<string, string, string, Search>> trackTable;
+        private static readonly List<Tuple<string, string, string, DeezerSearchItem>> trackTable;
         private static readonly List<Tuple<string, string, Playlist>> playlistTable;
         private static readonly List<Tuple<int, string, string, string, string>> trackToPlaylistTable;
         private static readonly List<Tuple<string, IEnumerable<Genre>>> genreTable; 
@@ -27,7 +27,7 @@ namespace TracksToDeezer.Tests.Mocked
                 deezerGateway = new Mock<IDeezerGateway>();
                 tokenTable = new List<Tuple<string, string, string, string>>();
                 meTable = new List<Tuple<string, DeezerUser>>();
-                trackTable = new List<Tuple<string, string, string, Search>>();
+                trackTable = new List<Tuple<string, string, string, DeezerSearchItem>>();
                 playlistTable = new List<Tuple<string, string, Playlist>>();
                 trackToPlaylistTable = new List<Tuple<int, string, string, string, string>>();
                 genreTable = new List<Tuple<string, IEnumerable<Genre>>>();
@@ -91,9 +91,9 @@ namespace TracksToDeezer.Tests.Mocked
             meTable.Add(new Tuple<string, DeezerUser>(accessToken, deezerUser));
         }
 
-        public static void SetTrack(string trackId, string artist, string title, Search search)
+        public static void SetTrack(string trackId, string artist, string title, DeezerSearchItem search)
         {
-            trackTable.Add(new Tuple<string, string, string, Search>(trackId, artist, title, search));
+            trackTable.Add(new Tuple<string, string, string, DeezerSearchItem>(trackId, artist, title, search));
         }
 
         public static void SetGenre(string albumId, IEnumerable<Genre> genres)
@@ -114,12 +114,12 @@ namespace TracksToDeezer.Tests.Mocked
             return meTable.Where(x => x.Item1 == accessToken).Select(x => x.Item2).SingleOrDefault();
         }
 
-        private static Search SearchTracks(string artist, string title)
+        private static DeezerSearchItem SearchTracks(string artist, string title)
         {
             return trackTable.Where(x => x.Item2 == artist && x.Item3 == title).Select(x => x.Item4).SingleOrDefault();
         }
 
-        private static Search GetTrack(string trackId)
+        private static DeezerSearchItem GetTrack(string trackId)
         {
             return trackTable.Where(x => x.Item1 == trackId).Select(x => x.Item4).SingleOrDefault();
         }

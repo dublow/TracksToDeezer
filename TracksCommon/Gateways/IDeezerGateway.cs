@@ -8,8 +8,8 @@ namespace TracksCommon.Gateways
     {
         string GetToken(string appId, string appSecret, string code);
         DeezerUser Me(string accessToken);
-        Search SearchTracks(string artist, string title);
-        Search GetTrack(string trackId);
+        DeezerSearchItem SearchTracks(string artist, string title);
+        DeezerSearchItem GetTrack(string trackId);
         Playlist GetPlaylist(string accessToken, string name);
         Playlist CreatePlaylist(string accessToken, string name);
         string AddToPlaylist(int id, string playlistId, string trackId, string accessToken, string searchMessage);

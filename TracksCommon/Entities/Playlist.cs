@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TracksCommon.Entities
 {
-    public class Playlist
+    public class Playlist : IDeserializer
     {
         public string Id { get; set; }
         public string Title { get; set; }

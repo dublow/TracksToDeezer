@@ -18,3 +18,21 @@ C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToD
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Dapper.xml
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Siriona.Library.ServiceBus.dll
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\TracksToDeezer.Tools.exe.config
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\TracksToDeezer.Tools.exe
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\TracksToDeezer.Tools.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\TracksCommon.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Dapper.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\MySql.Data.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\TracksCommon.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Siriona.Library.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Siriona.Library.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Dapper.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Dapper.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.csprojResolveAssemblyReference.cache
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.exe
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.pdb

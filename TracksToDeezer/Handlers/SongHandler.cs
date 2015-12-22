@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Siriona.Library.EventModel;
 using TracksCommon.Business;
-using TracksCommon.Configurations;
+using TracksCommon.Configurations.Deezer;
 using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksCommon.Extensions;

@@ -15,3 +15,14 @@ C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCom
 C:\Users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Newtonsoft.Json.xml
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.csprojResolveAssemblyReference.cache
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksCommon\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\TracksCommon.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\TracksCommon.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Dapper.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Dapper.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Dapper.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.csprojResolveAssemblyReference.cache
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.pdb

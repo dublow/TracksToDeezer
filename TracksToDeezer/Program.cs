@@ -12,6 +12,8 @@ using TracksCommon.Gateways;
 using TracksCommon.Http;
 using TracksCommon.Providers;
 using TracksToDeezer.Handlers;
+using TracksCommon.Configurations.Deezer;
+using TracksCommon.Search;
 
 namespace TracksToDeezer
 {
@@ -19,47 +21,51 @@ namespace TracksToDeezer
     {
         static void Main(string[] args)
         {
-            
-
-            var conf = new ServerConfiguration();
-            var sql = new SqlConnectionProvider(conf.ConnectionString);
+            var deezerConfiguration = new DeezerConfiguration();
+            var endpoints = deezerConfiguration.Endpoints;
+            var sql = new SqlConnectionProvider(deezerConfiguration.ConnectionString);
             var apiGateway = new ApiGateway(sql);
             IHttpPoster httpPoster = new HttpPoster();
             ILogGateway logGateway = new LogGateway(sql);
 
-            var deezerGateway = new DeezerGateway(TrackManager.LoadDeezerTrackManagers(), httpPoster);
+            var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerArtistFilter(), new DeezerArtistFilter() };
+            var searchs = new List<ISearch>
+            {
+                new FullSearch(endpoints[Endpoint.FullSearch], filters),
+                new TitleSearch(endpoints[Endpoint.FullSearch], filters),
+                new ArtistSearch(endpoints[Endpoint.FullSearch], filters)
+            };
+
+            var deezerGateway = new DeezerGateway(searchs, httpPoster, endpoints);
             IStatGateway statGateway = new StatGateway(sql);
 
             try
             {
                 var container = new UnityIocContainer();
-                container.RegisterInstance(conf);
+                container.RegisterInstance(deezerConfiguration);
                 container.RegisterInstance(apiGateway);
                 container.RegisterInstance(deezerGateway);
                 container.RegisterInstance(statGateway);
                 container.RegisterInstance(logGateway);
 
-                var server = HttpServer.Named(string.Format("Siriona.Listener.{0}", conf.ServiceName))
-                            .At(string.Format("http://+:80/{0}/", conf.ServiceName))
+                var server = HttpServer.Named(string.Format("Siriona.Listener.{0}", deezerConfiguration.ServiceName))
+                            .At(string.Format("http://+:80/{0}/", deezerConfiguration.ServiceName))
                             .Bind.Path("{controller}/{action}")
                             .CreateHandlersWith(container)
                             .Create();
 
                 var bus = Bus
                     .Named("TracksToDeezer")
-                    .At("msmq://localhost/TracksToDeezer")
-                    .ControlAt("msmq://localhost/TracksToDeezer.control")
-                    .ErrorsAt("msmq://localhost/TracksToDeezer.errors")
-                    .Reliable(false)
                     .CreateHandlersWith(container)
+                    .DisableSubscriptionService()
                     .CreateBus();
 
                 container.RegisterInstance(bus);
-                bus.Subscribe(new SongHandler(conf, apiGateway, deezerGateway, logGateway, LoadRadios(sql, conf.Radios)));
+                bus.Subscribe(new SongHandler(deezerConfiguration, apiGateway, deezerGateway, logGateway, LoadRadios(sql, deezerConfiguration.Radios)));
 
                 var services = new List<IHostedService> { server, bus };
 
-                var serviceDescription = new ServiceDescription(conf.ServiceName, conf.ServiceName, conf.ServiceName);
+                var serviceDescription = new ServiceDescription(deezerConfiguration.ServiceName, deezerConfiguration.ServiceName, deezerConfiguration.ServiceName);
                 Host.Run(services.ToArray(), serviceDescription, args);
             }
             catch (Exception ex )

@@ -9,6 +9,6 @@ namespace TracksCommon.Filters
 {
     public interface IFilter
     {
-        Search Create(DeezerSearch deezerSearch, string artist, string title, string message);
+        DeezerSearchItem Create(DeezerSearch deezerSearch, string artist, string title, string message);
     }
 }
