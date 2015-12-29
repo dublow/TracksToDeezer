@@ -1,0 +1,335 @@
+﻿{
+  "id": "8542769",
+  "title": "Wonder Rooms",
+  "upc": "3610158328023",
+  "link": "https://www.deezer.com/album/8542769",
+  "share": "http://www.deezer.com/album/8542769?utm_source=deezer&utm_content=album-8542769&utm_term=4934039_1451406384&utm_medium=web",
+  "cover": "https://api.deezer.com/album/8542769/image",
+  "cover_small": "https://cdns-images.dzcdn.net/images/cover/6f192914e2e03721b847ef84dc572178/56x56-000000-80-0-0.jpg",
+  "cover_medium": "https://cdns-images.dzcdn.net/images/cover/6f192914e2e03721b847ef84dc572178/250x250-000000-80-0-0.jpg",
+  "cover_big": "https://cdns-images.dzcdn.net/images/cover/6f192914e2e03721b847ef84dc572178/500x500-000000-80-0-0.jpg",
+  "genre_id": 85,
+  "genres": {
+    "data": [
+      {
+        "id": 85,
+        "name": "Alternative",
+        "picture": "https://api.deezer.com/genre/85/image",
+        "type": "genre"
+      },
+      {
+        "id": 106,
+        "name": "Electro",
+        "picture": "https://api.deezer.com/genre/106/image",
+        "type": "genre"
+      }
+    ]
+  },
+  "label": "Kaiguan",
+  "nb_tracks": 14,
+  "duration": 2779,
+  "fans": 58,
+  "rating": 0,
+  "release_date": "2014-09-15",
+  "record_type": "album",
+  "available": true,
+  "tracklist": "https://api.deezer.com/album/8542769/tracks",
+  "explicit_lyrics": false,
+  "contributors": [
+    {
+      "id": 4049414,
+      "name": "AM444",
+      "link": "https://www.deezer.com/artist/4049414",
+      "share": "http://www.deezer.com/artist/4049414?utm_source=deezer&utm_content=artist-4049414&utm_term=4934039_1451406384&utm_medium=web",
+      "picture": "https://api.deezer.com/artist/4049414/image",
+      "picture_small": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/500x500-000000-80-0-0.jpg",
+      "radio": true,
+      "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+      "type": "artist",
+      "role": "Main"
+    }
+  ],
+  "artist": {
+    "id": "4049414",
+    "name": "AM444",
+    "picture": "https://api.deezer.com/artist/4049414/image",
+    "picture_small": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/250x250-000000-80-0-0.jpg",
+    "picture_big": "https://cdns-images.dzcdn.net/images/artist/4044360c459118fcc820bde3e908b8d6/500x500-000000-80-0-0.jpg",
+    "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+    "type": "artist"
+  },
+  "type": "album",
+  "tracks": {
+    "data": [
+      {
+        "id": "84731145",
+        "readable": true,
+        "title": "Lies (Jay. Soul Truth Remix)",
+        "title_short": "Lies",
+        "title_version": "(Jay. Soul Truth Remix)",
+        "link": "https://www.deezer.com/track/84731145",
+        "duration": "264",
+        "rank": "301617",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-9.deezer.com/stream/9ae7f64cfbbce4cad13f1dec7caac0f3-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731147",
+        "readable": true,
+        "title": "Ge Zhong Ren",
+        "title_short": "Ge Zhong Ren",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731147",
+        "duration": "228",
+        "rank": "310991",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2ea7967c4fa45b2c7facc99d66a991da-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731149",
+        "readable": true,
+        "title": "Ru Ci Er Yi",
+        "title_short": "Ru Ci Er Yi",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731149",
+        "duration": "209",
+        "rank": "298992",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/3bdec592ab647d46a69450be3f24e40c-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731151",
+        "readable": true,
+        "title": "Shen Xian Yao",
+        "title_short": "Shen Xian Yao",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731151",
+        "duration": "181",
+        "rank": "309537",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/37d91a0009c68b8746728d41f91e387a-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731153",
+        "readable": true,
+        "title": "Eye Know",
+        "title_short": "Eye Know",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731153",
+        "duration": "193",
+        "rank": "315201",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-e.deezer.com/stream/e179dc98c84c261d75eb7a8261888d8f-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731155",
+        "readable": true,
+        "title": "Jing Mi De Hu Po",
+        "title_short": "Jing Mi De Hu Po",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731155",
+        "duration": "187",
+        "rank": "306424",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-6.deezer.com/stream/6c44b5d25bb1982dadf6162b6e94af82-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731157",
+        "readable": true,
+        "title": "Shi Yi",
+        "title_short": "Shi Yi",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731157",
+        "duration": "85",
+        "rank": "315926",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/d09296b17c11df37753fb048afc2d758-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731159",
+        "readable": true,
+        "title": "Xiang Shi You Guang",
+        "title_short": "Xiang Shi You Guang",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731159",
+        "duration": "235",
+        "rank": "302268",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/d977e49fef550266d21ff35f30d4dd7c-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731161",
+        "readable": true,
+        "title": "Hei Gua Fu Zhi Ai",
+        "title_short": "Hei Gua Fu Zhi Ai",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731161",
+        "duration": "80",
+        "rank": "291949",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/fa0e0c81015267bbc0faf194f4a1d0f6-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731163",
+        "readable": true,
+        "title": "Whatsoever",
+        "title_short": "Whatsoever",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731163",
+        "duration": "181",
+        "rank": "310341",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/291c4ec08e15b9e3258c524ddaf56368-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731165",
+        "readable": true,
+        "title": "Eye Wonder",
+        "title_short": "Eye Wonder",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731165",
+        "duration": "222",
+        "rank": "313279",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/1da60441a4c94be888eb394b2963af36-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731167",
+        "readable": true,
+        "title": "Ni Wen Wo Ba",
+        "title_short": "Ni Wen Wo Ba",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731167",
+        "duration": "178",
+        "rank": "294318",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/d1d7429254b49be839f2900b9f90148c-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731169",
+        "readable": true,
+        "title": "Born Burn",
+        "title_short": "Born Burn",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731169",
+        "duration": "251",
+        "rank": "302444",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/db4664b4de948ec8699adc8a0fc744f4-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "84731171",
+        "readable": true,
+        "title": "Shen Jing Mo Shao",
+        "title_short": "Shen Jing Mo Shao",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/84731171",
+        "duration": "285",
+        "rank": "308307",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/1dda65f552596264bf2649dbd448615d-0.mp3",
+        "artist": {
+          "id": "4049414",
+          "name": "AM444",
+          "tracklist": "https://api.deezer.com/artist/4049414/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      }
+    ]
+  }
+}

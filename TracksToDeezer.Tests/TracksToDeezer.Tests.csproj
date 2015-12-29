@@ -38,8 +38,8 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Siriona.Library, Version=1.0.10527.0, Culture=neutral, PublicKeyToken=fa1e8a7af61cfdda, processorArchitecture=MSIL">
@@ -58,6 +58,7 @@
     <Compile Include="Mocked\MockedApiGateway.cs" />
     <Compile Include="Mocked\MockedDeezerGateway.cs" />
     <Compile Include="Mocked\MockedDeezerServiceConfiguration.cs" />
+    <Compile Include="Mocked\MockedEndpoints.cs" />
     <Compile Include="Mocked\MockedHttpPoster.cs" />
     <Compile Include="Mocked\MockedLogGateway.cs" />
     <Compile Include="Mocked\MockedRadioBusiness.cs" />
@@ -66,13 +67,43 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <EmbeddedResource Include="Datas\fullsearch.json">
+    <EmbeddedResource Include="Datas\Full\search.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Datas\album.json">
+    <EmbeddedResource Include="Datas\Full\album.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Datas\playlist.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\FullByTitle\album.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\FullByTitle\search.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\FullByArtist\album.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\FullByArtist\search.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleFull\album.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleFull\search.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleFull\searchtitle.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleByTitle\album.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleByTitle\search.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datas\TitleByTitle\searchtitle.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -95,6 +126,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

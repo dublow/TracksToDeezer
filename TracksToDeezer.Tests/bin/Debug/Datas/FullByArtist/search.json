@@ -1,0 +1,39 @@
+﻿{
+  "data": [
+    {
+      "id": "11106715",
+      "readable": true,
+      "title": "Bullitt, Main Title (Movie Version)",
+      "title_short": "Bullitt, Main Title",
+      "title_version": "(Movie Version)",
+      "link": "https://www.deezer.com/track/11106715",
+      "duration": "188",
+      "rank": "353559",
+      "explicit_lyrics": false,
+      "preview": "http://e-cdn-preview-e.deezer.com/stream/e72a8e9f244258f8e05073983702d395-7.mp3",
+      "artist": {
+        "id": "4694",
+        "name": "Lalo Schifrin",
+        "link": "https://www.deezer.com/artist/4694",
+        "picture": "https://api.deezer.com/artist/4694/image",
+        "picture_small": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/56x56-000000-80-0-0.jpg",
+        "picture_medium": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/250x250-000000-80-0-0.jpg",
+        "picture_big": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/500x500-000000-80-0-0.jpg",
+        "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+        "type": "artist"
+      },
+      "album": {
+        "id": "1016072",
+        "title": "Bullitt",
+        "cover": "https://api.deezer.com/album/1016072/image",
+        "cover_small": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/56x56-000000-80-0-0.jpg",
+        "cover_medium": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/250x250-000000-80-0-0.jpg",
+        "cover_big": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/500x500-000000-80-0-0.jpg",
+        "tracklist": "https://api.deezer.com/album/1016072/tracks",
+        "type": "album"
+      },
+      "type": "track"
+    }
+  ],
+  "total": 1
+}

@@ -1,0 +1,322 @@
+﻿{
+  "id": "8002208",
+  "title": "Angus & Julia Stone",
+  "upc": "3700426919043",
+  "link": "https://www.deezer.com/album/8002208",
+  "share": "http://www.deezer.com/album/8002208?utm_source=deezer&utm_content=album-8002208&utm_term=4934039_1451403444&utm_medium=web",
+  "cover": "https://api.deezer.com/album/8002208/image",
+  "cover_small": "https://cdns-images.dzcdn.net/images/cover/21fe4935f76aacf460f45a8c144c66fe/56x56-000000-80-0-0.jpg",
+  "cover_medium": "https://cdns-images.dzcdn.net/images/cover/21fe4935f76aacf460f45a8c144c66fe/250x250-000000-80-0-0.jpg",
+  "cover_big": "https://cdns-images.dzcdn.net/images/cover/21fe4935f76aacf460f45a8c144c66fe/500x500-000000-80-0-0.jpg",
+  "genre_id": 85,
+  "genres": {
+    "data": [
+      {
+        "id": 85,
+        "name": "Alternative",
+        "picture": "https://api.deezer.com/genre/85/image",
+        "type": "genre"
+      },
+      {
+        "id": 86,
+        "name": "Pop Indé",
+        "picture": "https://api.deezer.com/genre/86/image",
+        "type": "genre"
+      },
+      {
+        "id": 132,
+        "name": "Pop",
+        "picture": "https://api.deezer.com/genre/132/image",
+        "type": "genre"
+      }
+    ]
+  },
+  "label": "Discograph",
+  "nb_tracks": 13,
+  "duration": 3607,
+  "fans": 56405,
+  "rating": 0,
+  "release_date": "2014-07-28",
+  "record_type": "album",
+  "available": true,
+  "tracklist": "https://api.deezer.com/album/8002208/tracks",
+  "explicit_lyrics": false,
+  "contributors": [
+    {
+      "id": 170482,
+      "name": "Angus & Julia Stone",
+      "link": "https://www.deezer.com/artist/170482",
+      "share": "http://www.deezer.com/artist/170482?utm_source=deezer&utm_content=artist-170482&utm_term=4934039_1451403444&utm_medium=web",
+      "picture": "https://api.deezer.com/artist/170482/image",
+      "picture_small": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/500x500-000000-80-0-0.jpg",
+      "radio": true,
+      "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+      "type": "artist",
+      "role": "Main"
+    }
+  ],
+  "artist": {
+    "id": "170482",
+    "name": "Angus & Julia Stone",
+    "picture": "https://api.deezer.com/artist/170482/image",
+    "picture_small": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/250x250-000000-80-0-0.jpg",
+    "picture_big": "https://cdns-images.dzcdn.net/images/artist/92f97fa13a7c1ac01f449730fb097d9c/500x500-000000-80-0-0.jpg",
+    "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+    "type": "artist"
+  },
+  "type": "album",
+  "tracks": {
+    "data": [
+      {
+        "id": "80164456",
+        "readable": true,
+        "title": "A Heartbreak",
+        "title_short": "A Heartbreak",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164456",
+        "duration": "256",
+        "rank": "708812",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-4.deezer.com/stream/43854e14990dc270a81be08bc321c36a-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164458",
+        "readable": true,
+        "title": "My Word For It",
+        "title_short": "My Word For It",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164458",
+        "duration": "248",
+        "rank": "609378",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-a.deezer.com/stream/ae9fe05f19960970d26743921312624d-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164460",
+        "readable": true,
+        "title": "Grizzly Bear",
+        "title_short": "Grizzly Bear",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164460",
+        "duration": "248",
+        "rank": "837638",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-8.deezer.com/stream/8269d46b55f922a9ec22d8887e52dcd5-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164462",
+        "readable": true,
+        "title": "Heart Beats Slow",
+        "title_short": "Heart Beats Slow",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164462",
+        "duration": "275",
+        "rank": "644856",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/d20ae1b2dfe9286719ab487d136ece45-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164464",
+        "readable": true,
+        "title": "Wherever You Are",
+        "title_short": "Wherever You Are",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164464",
+        "duration": "221",
+        "rank": "654500",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-e.deezer.com/stream/e8cae41609428c0f7fc07567f87e8dcb-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164466",
+        "readable": true,
+        "title": "Get Home",
+        "title_short": "Get Home",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164466",
+        "duration": "271",
+        "rank": "702944",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/19d1f5ca25b927f8462e31639b800621-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164468",
+        "readable": true,
+        "title": "Death Defying Acts",
+        "title_short": "Death Defying Acts",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164468",
+        "duration": "313",
+        "rank": "622821",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-e.deezer.com/stream/e44b5d588814d4990b14bb345aec3da3-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164470",
+        "readable": true,
+        "title": "Little Whiskey",
+        "title_short": "Little Whiskey",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164470",
+        "duration": "216",
+        "rank": "577901",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/15044a7bdb7944b41ee087476d511f3e-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164472",
+        "readable": true,
+        "title": "From The Stalls",
+        "title_short": "From The Stalls",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164472",
+        "duration": "309",
+        "rank": "585258",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/f03c26d383586d642dcea1d3f3f977af-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164474",
+        "readable": true,
+        "title": "Other Things",
+        "title_short": "Other Things",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164474",
+        "duration": "179",
+        "rank": "571145",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-e.deezer.com/stream/e77835413dbdee04bed17a96bdfe06ad-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164476",
+        "readable": true,
+        "title": "Please You",
+        "title_short": "Please You",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164476",
+        "duration": "340",
+        "rank": "536037",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/28257824ad93de9146b1d8ab10fe09e3-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164478",
+        "readable": true,
+        "title": "Main Street",
+        "title_short": "Main Street",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164478",
+        "duration": "335",
+        "rank": "531340",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/5a3d0338f1efe5fff515afdf802fc911-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "80164480",
+        "readable": true,
+        "title": "Crash And Burn",
+        "title_short": "Crash And Burn",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/80164480",
+        "duration": "396",
+        "rank": "550222",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/dd69bf80a5ac73c08397c845a6f18160-0.mp3",
+        "artist": {
+          "id": "170482",
+          "name": "Angus & Julia Stone",
+          "tracklist": "https://api.deezer.com/artist/170482/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      }
+    ]
+  }
+}

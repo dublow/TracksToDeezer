@@ -12,11 +12,11 @@ namespace TracksToDeezer.Tests.Mocked
 {
     public class MockedApiGateway
     {
-        private static Mock<IApiGateway> apiGateway;
-        public static List<Tuple<string, string, string, string, string>> apiTable;
-        public static List<Tuple<string, string>> playlistTable; 
+        private readonly Mock<IApiGateway> apiGateway;
+        public List<Tuple<string, string, string, string, string>> apiTable;
+        public List<Tuple<string, string>> playlistTable; 
 
-        static MockedApiGateway()
+        public MockedApiGateway()
         {
             if (apiGateway == null)
             {
@@ -27,7 +27,7 @@ namespace TracksToDeezer.Tests.Mocked
                 
         }
 
-        public static IApiGateway Get
+        public IApiGateway Get
         {
             get
             {
@@ -64,12 +64,13 @@ namespace TracksToDeezer.Tests.Mocked
         }
 
         
-        private static void AddApi(string apiName, string token, string userId, string firstName, string lastname)
+        private void AddApi(string apiName, string token, string userId, string firstName, string lastname)
         {
-            apiTable.Add(new Tuple<string, string, string, string, string>(apiName, token, userId, firstName, lastname));
+            if (apiTable.All(x => x.Item1 != apiName))
+                apiTable.Add(new Tuple<string, string, string, string, string>(apiName, token, userId, firstName, lastname));
         }
 
-        private static void RemoveApi(string apiName)
+        private void RemoveApi(string apiName)
         {
             if (apiTable.Any(x => x.Item1 == apiName))
             {
@@ -78,7 +79,7 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        private static Api GetApi(string apiName)
+        private Api GetApi(string apiName)
         {
             return
                 apiTable.Where(x => x.Item1 == apiName)
@@ -86,12 +87,14 @@ namespace TracksToDeezer.Tests.Mocked
                     .SingleOrDefault();
         }
 
-        private static void AddPlaylist(string title, string id)
+        private void AddPlaylist(string title, string id)
         {
-            playlistTable.Add(new Tuple<string, string>(title, id));
+
+            if(playlistTable.All(x => x.Item1 != title))
+                playlistTable.Add(new Tuple<string, string>(title, id));
         }
 
-        private static Playlist GetPlaylist(string title)
+        private Playlist GetPlaylist(string title)
         {
             return
                 playlistTable.Where(x => x.Item1 == title)

@@ -28,12 +28,12 @@ namespace TracksToDeezer
             IHttpPoster httpPoster = new HttpPoster();
             ILogGateway logGateway = new LogGateway(sql);
 
-            var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerArtistFilter(), new DeezerArtistFilter() };
+            var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerTitleFilter(), new DeezerArtistFilter() };
             var searchs = new List<ISearch>
             {
                 new FullSearch(endpoints[Endpoint.FullSearch], filters),
-                new TitleSearch(endpoints[Endpoint.FullSearch], filters),
-                new ArtistSearch(endpoints[Endpoint.FullSearch], filters)
+                new TitleSearch(endpoints[Endpoint.TitleSearch], filters),
+                new ArtistSearch(endpoints[Endpoint.ArtistSearch], filters)
             };
 
             var deezerGateway = new DeezerGateway(searchs, httpPoster, endpoints);

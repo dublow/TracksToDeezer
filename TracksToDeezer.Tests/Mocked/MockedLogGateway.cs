@@ -8,10 +8,10 @@ namespace TracksToDeezer.Tests.Mocked
 {
     public class MockedLogGateway
     {
-        private readonly static Mock<ILogGateway> logGateway;
-        public static List<Tuple<Log>> logTable;
+        private readonly Mock<ILogGateway> logGateway;
+        public List<Tuple<Log>> logTable;
 
-        static MockedLogGateway()
+        public MockedLogGateway()
         {
             if (logGateway == null)
             {
@@ -21,7 +21,7 @@ namespace TracksToDeezer.Tests.Mocked
                 
         }
 
-        public static ILogGateway Get
+        public ILogGateway Get
         {
             get
             {
@@ -37,7 +37,7 @@ namespace TracksToDeezer.Tests.Mocked
         }
 
 
-        private static void AddLog(Log log)
+        private void AddLog(Log log)
         {
             logTable.Add(new Tuple<Log>(log));
         }

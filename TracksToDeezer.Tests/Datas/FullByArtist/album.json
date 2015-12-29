@@ -1,0 +1,429 @@
+﻿{
+  "id": "1016072",
+  "title": "Bullitt",
+  "upc": "651702633920",
+  "link": "https://www.deezer.com/album/1016072",
+  "share": "http://www.deezer.com/album/1016072?utm_source=deezer&utm_content=album-1016072&utm_term=4934039_1451402703&utm_medium=web",
+  "cover": "https://api.deezer.com/album/1016072/image",
+  "cover_small": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/56x56-000000-80-0-0.jpg",
+  "cover_medium": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/250x250-000000-80-0-0.jpg",
+  "cover_big": "https://cdns-images.dzcdn.net/images/cover/557c059753dc18d0954376cb41c95c0f/500x500-000000-80-0-0.jpg",
+  "genre_id": 98,
+  "genres": {
+    "data": [
+      {
+        "id": 98,
+        "name": "Classique",
+        "picture": "https://api.deezer.com/genre/98/image",
+        "type": "genre"
+      },
+      {
+        "id": 129,
+        "name": "Jazz",
+        "picture": "https://api.deezer.com/genre/129/image",
+        "type": "genre"
+      },
+      {
+        "id": 130,
+        "name": "Jazz instrumental",
+        "picture": "https://api.deezer.com/genre/130/image",
+        "type": "genre"
+      },
+      {
+        "id": 173,
+        "name": "Films/Jeux vidéo",
+        "picture": "https://api.deezer.com/genre/173/image",
+        "type": "genre"
+      },
+      {
+        "id": 174,
+        "name": "Musiques de films",
+        "picture": "https://api.deezer.com/genre/174/image",
+        "type": "genre"
+      }
+    ]
+  },
+  "label": "Aleph Records",
+  "nb_tracks": 18,
+  "duration": 3337,
+  "fans": 2121,
+  "rating": 0,
+  "release_date": "2000-07-11",
+  "record_type": "album",
+  "available": true,
+  "tracklist": "https://api.deezer.com/album/1016072/tracks",
+  "explicit_lyrics": false,
+  "contributors": [
+    {
+      "id": 4694,
+      "name": "Lalo Schifrin",
+      "link": "https://www.deezer.com/artist/4694",
+      "share": "http://www.deezer.com/artist/4694?utm_source=deezer&utm_content=artist-4694&utm_term=4934039_1451402703&utm_medium=web",
+      "picture": "https://api.deezer.com/artist/4694/image",
+      "picture_small": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/500x500-000000-80-0-0.jpg",
+      "radio": true,
+      "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+      "type": "artist",
+      "role": "Main"
+    }
+  ],
+  "artist": {
+    "id": "4694",
+    "name": "Lalo Schifrin",
+    "picture": "https://api.deezer.com/artist/4694/image",
+    "picture_small": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/250x250-000000-80-0-0.jpg",
+    "picture_big": "https://cdns-images.dzcdn.net/images/artist/321d9be3b772fca0ad75563de13dc74c/500x500-000000-80-0-0.jpg",
+    "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+    "type": "artist"
+  },
+  "type": "album",
+  "tracks": {
+    "data": [
+      {
+        "id": "11106715",
+        "readable": true,
+        "title": "Bullitt, Main Title (Movie Version)",
+        "title_short": "Bullitt, Main Title",
+        "title_version": "(Movie Version)",
+        "link": "https://www.deezer.com/track/11106715",
+        "duration": "188",
+        "rank": "353559",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-e.deezer.com/stream/e72a8e9f244258f8e05073983702d395-7.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106716",
+        "readable": true,
+        "title": "Shifting Gears",
+        "title_short": "Shifting Gears",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106716",
+        "duration": "194",
+        "rank": "333816",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/1c82efae77239f64e67b8e9a9e4e7adc-6.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106717",
+        "readable": true,
+        "title": "Ice Pick Mike (Movie Version)",
+        "title_short": "Ice Pick Mike",
+        "title_version": "(Movie Version)",
+        "link": "https://www.deezer.com/track/11106717",
+        "duration": "240",
+        "rank": "306075",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/de22128948be06fe26254c3ea4d37da8-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106718",
+        "readable": true,
+        "title": "Cantata For Combo",
+        "title_short": "Cantata For Combo",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106718",
+        "duration": "173",
+        "rank": "288696",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2142ce063c16c21130769787c8ac22a1-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106719",
+        "readable": true,
+        "title": "Room 26 (Movie Version)",
+        "title_short": "Room 26",
+        "title_version": "(Movie Version)",
+        "link": "https://www.deezer.com/track/11106719",
+        "duration": "148",
+        "rank": "298821",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/34afa20064c33ec62dec793ffcbab457-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106720",
+        "readable": true,
+        "title": "On the Way to San Mateo",
+        "title_short": "On the Way to San Mateo",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106720",
+        "duration": "157",
+        "rank": "309931",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/0b75424d427a4e37a71ca479e665d542-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106721",
+        "readable": true,
+        "title": "Just Coffee",
+        "title_short": "Just Coffee",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106721",
+        "duration": "185",
+        "rank": "292412",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-8.deezer.com/stream/8d6c23331caebbcc4737a6cb72bfe72e-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106722",
+        "readable": true,
+        "title": "Main Title (Record Version)",
+        "title_short": "Main Title",
+        "title_version": "(Record Version)",
+        "link": "https://www.deezer.com/track/11106722",
+        "duration": "135",
+        "rank": "254917",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-9.deezer.com/stream/917c8c7c4dad1e6a69eb998277b07148-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106723",
+        "readable": true,
+        "title": "The Aftermath of Love",
+        "title_short": "The Aftermath of Love",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106723",
+        "duration": "183",
+        "rank": "296696",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-9.deezer.com/stream/92954b294ba1c4be309a0cf819a850c9-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106724",
+        "readable": true,
+        "title": "Ice Pick Mike (Record Version)",
+        "title_short": "Ice Pick Mike",
+        "title_version": "(Record Version)",
+        "link": "https://www.deezer.com/track/11106724",
+        "duration": "188",
+        "rank": "293563",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/18e50a8a74d1d5139091dc743aef4dc0-6.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106725",
+        "readable": true,
+        "title": "Hotel Daniels",
+        "title_short": "Hotel Daniels",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106725",
+        "duration": "213",
+        "rank": "292974",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-b.deezer.com/stream/bb983a790b7a76cc6d4eec348cbee526-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106726",
+        "readable": true,
+        "title": "Bullitt, Guitar Solo",
+        "title_short": "Bullitt, Guitar Solo",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106726",
+        "duration": "106",
+        "rank": "289951",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-6.deezer.com/stream/6852895274169b269e1ca778c43d0303-6.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106727",
+        "readable": true,
+        "title": "The First Snow Fall",
+        "title_short": "The First Snow Fall",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106727",
+        "duration": "223",
+        "rank": "307832",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-6.deezer.com/stream/644171d0fc2fbf8ef99e959f449603b5-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106728",
+        "readable": true,
+        "title": "Room 26 (Record Version)",
+        "title_short": "Room 26",
+        "title_version": "(Record Version)",
+        "link": "https://www.deezer.com/track/11106728",
+        "duration": "222",
+        "rank": "302620",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-9.deezer.com/stream/9e79f3f44d2762ece27209ba3572ca8d-6.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106729",
+        "readable": true,
+        "title": "The Architect's Building",
+        "title_short": "The Architect's Building",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106729",
+        "duration": "271",
+        "rank": "311948",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/f562adc75feb73a58e6f1acef64761e8-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106730",
+        "readable": true,
+        "title": "Song For Cathy",
+        "title_short": "Song For Cathy",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106730",
+        "duration": "108",
+        "rank": "295435",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/fd9a19ecb3d09dfa97b444dffb059981-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106731",
+        "readable": true,
+        "title": "Music To Interrogate By",
+        "title_short": "Music To Interrogate By",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106731",
+        "duration": "172",
+        "rank": "295307",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/3261728e5276880d7cb3a1fa543c6d5b-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "11106732",
+        "readable": true,
+        "title": "End Credits",
+        "title_short": "End Credits",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/11106732",
+        "duration": "231",
+        "rank": "302555",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-d.deezer.com/stream/da03c8eb40539de793d577d5586dada9-5.mp3",
+        "artist": {
+          "id": "4694",
+          "name": "Lalo Schifrin",
+          "tracklist": "https://api.deezer.com/artist/4694/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      }
+    ]
+  }
+}

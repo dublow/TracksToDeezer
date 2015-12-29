@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Siriona.Library.ServiceBus;
-using TracksCommon.Configurations;
+using TracksCommon.Configurations.Deezer;
 using TracksCommon.Entities;
 using TracksCommon.Events;
 using TracksCommon.Filters;
@@ -20,12 +18,12 @@ namespace TracksToDeezer.Tools
     {
         static void Main(string[] args)
         {
-            
-            var conf = new ServerConfiguration();
+
+            var conf = new DeezerConfiguration();
             var endpoints = conf.Endpoints;
             var sql = new SqlConnectionProvider(conf.ConnectionString);
             var radios = LoadRadios(sql, conf.Radios);
-            var radio = radios["Kcsn"];
+            var radio = radios["Fip"];
 
             var filters = new List<IFilter> { new DeezerFullFilter(), new DeezerArtistFilter(), new DeezerArtistFilter() };
             var searchs = new List<ISearch>

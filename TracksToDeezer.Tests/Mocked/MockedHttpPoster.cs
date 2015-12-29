@@ -15,7 +15,7 @@ namespace TracksToDeezer.Tests.Mocked
     {
         private static Mock<IHttpPoster> httpPoster;
 
-        static MockedHttpPoster()
+        public MockedHttpPoster()
         {
             if (httpPoster == null)
             {
@@ -23,7 +23,7 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        public static IHttpPoster Get
+        public IHttpPoster Get
         {
             get
             {
@@ -55,19 +55,19 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        private static string Request(string url, string method)
+        private string Request(string url, string method)
         {
-            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string location = Path.Combine(executableLocation, url);
-            return File.ReadAllText(location);
+            return GetFile(url);
         }
 
-        private static T RequestWithDeserialization<T>(string url, string method)
+        private T RequestWithDeserialization<T>(string url, string method)
         {
-            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string location = Path.Combine(executableLocation, url);
-            var value = File.ReadAllText(location);
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(value);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(GetFile(url));
+        }
+
+        private string GetFile(string path)
+        {
+            return File.ReadAllText(path);
         }
     }
 }

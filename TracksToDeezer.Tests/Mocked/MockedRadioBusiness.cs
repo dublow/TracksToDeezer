@@ -11,10 +11,10 @@ namespace TracksToDeezer.Tests.Mocked
 {
     public class MockedRadioBusiness
     {
-        private static readonly Mock<IRadioBusiness> radioBusiness;
-        public static readonly List<Tuple<int, string, string, IEnumerable<Genre>>> radioTable;
+        private readonly Mock<IRadioBusiness> radioBusiness;
+        public readonly List<Tuple<int, string, string, IEnumerable<Genre>>> radioTable;
  
-        static MockedRadioBusiness()
+        public MockedRadioBusiness()
         {
             if (radioBusiness == null)
             {
@@ -23,7 +23,7 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        public static IRadioBusiness Get
+        public IRadioBusiness Get
         {
             get
             {
@@ -36,7 +36,7 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        private static void Update(int id, string trackId, string message, IEnumerable<Genre> genres)
+        private void Update(int id, string trackId, string message, IEnumerable<Genre> genres)
         {
             radioTable.Add(new Tuple<int, string, string, IEnumerable<Genre>>(id, trackId, message, genres));
         }

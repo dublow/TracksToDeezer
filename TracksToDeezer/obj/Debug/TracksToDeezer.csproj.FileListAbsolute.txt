@@ -5,7 +5,6 @@ c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToD
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.HttpServices.dll
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.Injection.dll
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
-c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\MySql.Data.dll
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.Unity.dll
 c:\users\ndelfour\documents\visual studio 2013\Projects\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.pdb

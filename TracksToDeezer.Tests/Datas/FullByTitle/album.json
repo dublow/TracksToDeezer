@@ -1,0 +1,419 @@
+﻿{
+  "id": "1574131",
+  "title": "Sound of Siam - Leftfield Luk Thung, Jazz & Molam in Thailand 1964-1975",
+  "upc": "5050580552579",
+  "link": "https://www.deezer.com/album/1574131",
+  "share": "http://www.deezer.com/album/1574131?utm_source=deezer&utm_content=album-1574131&utm_term=4934039_1451402071&utm_medium=web",
+  "cover": "https://api.deezer.com/album/1574131/image",
+  "cover_small": "https://cdns-images.dzcdn.net/images/cover/4382e03fe726b4781b80a24b2530d79d/56x56-000000-80-0-0.jpg",
+  "cover_medium": "https://cdns-images.dzcdn.net/images/cover/4382e03fe726b4781b80a24b2530d79d/250x250-000000-80-0-0.jpg",
+  "cover_big": "https://cdns-images.dzcdn.net/images/cover/4382e03fe726b4781b80a24b2530d79d/500x500-000000-80-0-0.jpg",
+  "genre_id": -1,
+  "genres": {
+    "data": [
+
+    ]
+  },
+  "label": "Soundway Records",
+  "nb_tracks": 19,
+  "duration": 3958,
+  "fans": 533,
+  "rating": 0,
+  "release_date": "2010-09-09",
+  "record_type": "album",
+  "available": true,
+  "tracklist": "https://api.deezer.com/album/1574131/tracks",
+  "explicit_lyrics": false,
+  "contributors": [
+    {
+      "id": 5080,
+      "name": "Various Artists",
+      "link": "https://www.deezer.com/artist/5080",
+      "share": "http://www.deezer.com/artist/5080?utm_source=deezer&utm_content=artist-5080&utm_term=4934039_1451402071&utm_medium=web",
+      "picture": "https://api.deezer.com/artist/5080/image",
+      "picture_small": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/500x500-000000-80-0-0.jpg",
+      "radio": true,
+      "tracklist": "https://api.deezer.com/artist/5080/top?limit=50",
+      "type": "artist",
+      "role": "Main"
+    }
+  ],
+  "artist": {
+    "id": "5080",
+    "name": "Various Artists",
+    "picture": "https://api.deezer.com/artist/5080/image",
+    "picture_small": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/56x56-000000-80-0-0.jpg",
+    "picture_medium": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/250x250-000000-80-0-0.jpg",
+    "picture_big": "https://cdns-images.dzcdn.net/images/artist/bb2d24a5ae14f9d3ff13680b20386c23/500x500-000000-80-0-0.jpg",
+    "tracklist": "https://api.deezer.com/artist/5080/top?limit=50",
+    "type": "artist"
+  },
+  "type": "album",
+  "tracks": {
+    "data": [
+      {
+        "id": "16824990",
+        "readable": true,
+        "title": "Lung Tung Wai",
+        "title_short": "Lung Tung Wai",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824990",
+        "duration": "221",
+        "rank": "312268",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-a.deezer.com/stream/ae9d75bfb527871ff36527e54129825c-1.mp3",
+        "artist": {
+          "id": "1642112",
+          "name": "Chaweewan Dumern",
+          "tracklist": "https://api.deezer.com/artist/1642112/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824991",
+        "readable": true,
+        "title": "Lam Toey Chaweewan",
+        "title_short": "Lam Toey Chaweewan",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824991",
+        "duration": "233",
+        "rank": "303264",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-f.deezer.com/stream/f5b6992fd5eb6a30f64ab04adcc0b087-1.mp3",
+        "artist": {
+          "id": "1642112",
+          "name": "Chaweewan Dumern",
+          "tracklist": "https://api.deezer.com/artist/1642112/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824992",
+        "readable": true,
+        "title": "Mae Kha Som Tam",
+        "title_short": "Mae Kha Som Tam",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824992",
+        "duration": "157",
+        "rank": "310764",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-4.deezer.com/stream/45b162a3975bb46f953b601fb3e5f0ec-1.mp3",
+        "artist": {
+          "id": "1003942",
+          "name": "Onuma Singsiri ",
+          "tracklist": "https://api.deezer.com/artist/1003942/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824993",
+        "readable": true,
+        "title": "Isan Klab Tin",
+        "title_short": "Isan Klab Tin",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824993",
+        "duration": "148",
+        "rank": "292718",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/59a5283c31ce36725091e1e7ef1bb215-1.mp3",
+        "artist": {
+          "id": "6091800",
+          "name": "Thapporn Petchubon",
+          "tracklist": "https://api.deezer.com/artist/6091800/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824994",
+        "readable": true,
+        "title": "Fai Yen",
+        "title_short": "Fai Yen",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824994",
+        "duration": "275",
+        "rank": "308016",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/01b69fbbee50f1a124a3abc252ba9b9b-1.mp3",
+        "artist": {
+          "id": "1003944",
+          "name": "Ream Daranoi ",
+          "tracklist": "https://api.deezer.com/artist/1003944/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824995",
+        "readable": true,
+        "title": "Sao Ban Pok Pab",
+        "title_short": "Sao Ban Pok Pab",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824995",
+        "duration": "199",
+        "rank": "299530",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-b.deezer.com/stream/b79ec19a112bb7e1342b486bd7bd2a6a-1.mp3",
+        "artist": {
+          "id": "1003945",
+          "name": "Panom Nopporn ",
+          "tracklist": "https://api.deezer.com/artist/1003945/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824996",
+        "readable": true,
+        "title": "Wan Maha Sanook",
+        "title_short": "Wan Maha Sanook",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824996",
+        "duration": "170",
+        "rank": "310140",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/0a3acf3e755d2dc9310954a724149e25-1.mp3",
+        "artist": {
+          "id": "1003946",
+          "name": "Plearn Promdan ",
+          "tracklist": "https://api.deezer.com/artist/1003946/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824997",
+        "readable": true,
+        "title": "Soul Lam Plearn",
+        "title_short": "Soul Lam Plearn",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824997",
+        "duration": "181",
+        "rank": "307677",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2c855faadb29f96d3646ca22fab4c0dd-1.mp3",
+        "artist": {
+          "id": "1003947",
+          "name": "The Petch Phin Thong Band ",
+          "tracklist": "https://api.deezer.com/artist/1003947/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824998",
+        "readable": true,
+        "title": "Ding Dong",
+        "title_short": "Ding Dong",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824998",
+        "duration": "152",
+        "rank": "296586",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-8.deezer.com/stream/892524879303b65da075b9c1b0839737-2.mp3",
+        "artist": {
+          "id": "1003948",
+          "name": "Waipod Phetsuphan ",
+          "tracklist": "https://api.deezer.com/artist/1003948/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16824999",
+        "readable": true,
+        "title": "Nom Samai Mai",
+        "title_short": "Nom Samai Mai",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16824999",
+        "duration": "244",
+        "rank": "318081",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-1.deezer.com/stream/1755f188cdda9a33609f9c842786c765-1.mp3",
+        "artist": {
+          "id": "1003949",
+          "name": "Saknatee Srichiangmai ",
+          "tracklist": "https://api.deezer.com/artist/1003949/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825000",
+        "readable": true,
+        "title": "Lam Plearn Toh Lom Nhao",
+        "title_short": "Lam Plearn Toh Lom Nhao",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825000",
+        "duration": "248",
+        "rank": "306855",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2b3557a5cf44b6f1012598ba497d72ee-1.mp3",
+        "artist": {
+          "id": "1003950",
+          "name": "Yenjit Porntawi ",
+          "tracklist": "https://api.deezer.com/artist/1003950/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825001",
+        "readable": true,
+        "title": "Sao Lam Plearn",
+        "title_short": "Sao Lam Plearn",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825001",
+        "duration": "250",
+        "rank": "313162",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-2.deezer.com/stream/2c6590bbcc8ee499a02936568151da17-1.mp3",
+        "artist": {
+          "id": "1003941",
+          "name": "Chaweewan Dumnern ",
+          "tracklist": "https://api.deezer.com/artist/1003941/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825002",
+        "readable": true,
+        "title": "Mae Jom Ka Lon",
+        "title_short": "Mae Jom Ka Lon",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825002",
+        "duration": "186",
+        "rank": "318120",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-0.deezer.com/stream/03671b1a661a826d64ce765d61449098-2.mp3",
+        "artist": {
+          "id": "1003951",
+          "name": "Dao Bandon  ",
+          "tracklist": "https://api.deezer.com/artist/1003951/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825003",
+        "readable": true,
+        "title": "Pen Jung Dai",
+        "title_short": "Pen Jung Dai",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825003",
+        "duration": "148",
+        "rank": "308496",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-5.deezer.com/stream/5a83592892f97c52de1bcd7036c88e41-1.mp3",
+        "artist": {
+          "id": "1003952",
+          "name": "Sanae Petchaboon  ",
+          "tracklist": "https://api.deezer.com/artist/1003952/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825004",
+        "readable": true,
+        "title": "Diew Sor Diew Caan",
+        "title_short": "Diew Sor Diew Caan",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825004",
+        "duration": "210",
+        "rank": "289381",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-c.deezer.com/stream/c64677f5d68a510954cd59dcf00fa970-1.mp3",
+        "artist": {
+          "id": "6091806",
+          "name": "Thong Huad",
+          "tracklist": "https://api.deezer.com/artist/6091806/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825005",
+        "readable": true,
+        "title": "Uay Porn Tahan Chaydan",
+        "title_short": "Uay Porn Tahan Chaydan",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825005",
+        "duration": "300",
+        "rank": "315570",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-4.deezer.com/stream/44e2bcbceb8f851cd478dd6c57198e72-1.mp3",
+        "artist": {
+          "id": "1003954",
+          "name": "Sodsri Rungsang  ",
+          "tracklist": "https://api.deezer.com/artist/1003954/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825006",
+        "readable": true,
+        "title": "Kai Tom Yum",
+        "title_short": "Kai Tom Yum",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825006",
+        "duration": "215",
+        "rank": "298886",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-8.deezer.com/stream/8a8aacb5e45996a9396c76288871639e-1.mp3",
+        "artist": {
+          "id": "1003955",
+          "name": "Kawaw Siang Thong ",
+          "tracklist": "https://api.deezer.com/artist/1003955/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825007",
+        "readable": true,
+        "title": "Pleng Yuk Owakard",
+        "title_short": "Pleng Yuk Owakard",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825007",
+        "duration": "187",
+        "rank": "298797",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-6.deezer.com/stream/694201dca8647b1ebe70aa39b8974b8c-1.mp3",
+        "artist": {
+          "id": "1003956",
+          "name": "The Viking Combo Band  ",
+          "tracklist": "https://api.deezer.com/artist/1003956/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      },
+      {
+        "id": "16825008",
+        "readable": true,
+        "title": "Tang Ngarn Si Nong",
+        "title_short": "Tang Ngarn Si Nong",
+        "title_version": "",
+        "link": "https://www.deezer.com/track/16825008",
+        "duration": "234",
+        "rank": "301445",
+        "explicit_lyrics": false,
+        "preview": "http://e-cdn-preview-3.deezer.com/stream/37efd3369e4f0d40eb8c34337a9bf729-1.mp3",
+        "artist": {
+          "id": "1003951",
+          "name": "Dao Bandon  ",
+          "tracklist": "https://api.deezer.com/artist/1003951/top?limit=50",
+          "type": "artist"
+        },
+        "type": "track"
+      }
+    ]
+  }
+}

@@ -13,13 +13,13 @@ namespace TracksToDeezer.Tests.Mocked
     {
         private static Mock<IDeezerServerConfiguration> conf;
 
-        static MockedDeezerServiceConfiguration()
+        public MockedDeezerServiceConfiguration()
         {
             if(conf == null)
                 conf = new Mock<IDeezerServerConfiguration>();
         }
 
-        public static IDeezerServerConfiguration Get
+        public IDeezerServerConfiguration Get
         {
             get
             {
@@ -37,42 +37,42 @@ namespace TracksToDeezer.Tests.Mocked
             }
         }
 
-        public static void SetAppId(string appId)
+        public void SetAppId(string appId)
         {
             conf.Setup(x => x.AppId).Returns(appId);
         }
 
-        public static void SetCallback(string callback)
+        public void SetCallback(string callback)
         {
             conf.Setup(x => x.Callback).Returns(callback);
         }
 
-        public static void SetConnectionString(string connectionString)
+        public void SetConnectionString(string connectionString)
         {
             conf.Setup(x => x.ConnectionString).Returns(connectionString);
         }
 
-        public static void SetPlaylist(string playlist)
+        public void SetPlaylist(string playlist)
         {
             conf.Setup(x => x.Playlist).Returns(playlist);
         }
 
-        public static void SetSecretId(string secretId)
+        public void SetSecretId(string secretId)
         {
             conf.Setup(x => x.SecretId).Returns(secretId);
         }
 
-        public static void SetServiceName(string serviceName)
+        public void SetServiceName(string serviceName)
         {
             conf.Setup(x => x.ServiceName).Returns(serviceName);
         }
 
-        public static void SetRadios(List<string> radios)
+        public void SetRadios(List<string> radios)
         {
             conf.Setup(x => x.Radios).Returns(radios);
         }
 
-        public static void SetEndpoints(Dictionary<Endpoint, string> endpoints)
+        public void SetEndpoints(Dictionary<Endpoint, string> endpoints)
         {
             conf.Setup(x => x.Endpoints).Returns(endpoints);
         }
