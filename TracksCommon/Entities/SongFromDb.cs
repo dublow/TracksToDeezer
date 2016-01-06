@@ -7,6 +7,7 @@
         public readonly string artiste;
         public readonly string title;
 
+        
         public SongFromDb(int id, string trackId, string artiste, string title)
         {
             this.id = id;

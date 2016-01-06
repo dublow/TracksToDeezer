@@ -1,6 +1,10 @@
-﻿using System.IO;
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using TracksCommon.Entities;
+using System.Text;
 
 namespace TracksCommon.Http
 {
@@ -24,6 +28,33 @@ namespace TracksCommon.Http
                     return streamReader.ReadToEnd();
                 }
             }
+        }
+
+        public string Post(string url, Dictionary<string, string> datas)
+        {
+            var dataForm = datas.Aggregate(new StringBuilder(), (cur, next) => { return cur.AppendFormat("{0}={1}&", next.Key, next.Value); });
+            dataForm.Length = dataForm.Length - 1;
+            var streamData = Encoding.UTF8.GetBytes(dataForm.ToString());
+
+            var webRequest = WebRequest.Create(url);
+
+            webRequest.Method = "POST";
+            webRequest.ContentType = "application/x-www-form-urlencoded";
+            webRequest.ContentLength = streamData.Length;
+
+            using (var stream = webRequest.GetRequestStream())
+            {
+                stream.Write(streamData, 0, streamData.Length);
+            }
+
+            using (var webResponse = webRequest.GetResponse())
+            {
+                using (var streamReader = new StreamReader(webResponse.GetResponseStream()))
+                {
+                    return streamReader.ReadToEnd();
+                }
+            }
+            
         }
     }
 }

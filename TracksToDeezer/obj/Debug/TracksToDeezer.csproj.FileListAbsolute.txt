@@ -41,3 +41,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Dapper
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\obj\Debug\TracksToDeezer.csprojResolveAssemblyReference.cache
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.Unity.dll
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.xml
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.ServiceBus.pdb

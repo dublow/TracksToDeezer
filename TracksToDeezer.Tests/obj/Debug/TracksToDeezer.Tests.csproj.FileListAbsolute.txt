@@ -59,8 +59,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\obj\Debug\
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\obj\Debug\TracksToDeezer.Tests.dll
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\obj\Debug\TracksToDeezer.Tests.pdb
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\TracksToDeezer.Tests.dll.config
-C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\fullsearch.json
-C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\album.json
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\playlist.json
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\addtoplaylist.txt
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\playlist.json
@@ -78,3 +76,16 @@ C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToD
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\album.json
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\search.json
 C:\Users\ndelfour\Documents\Visual Studio 2013\Projects\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\searchtitle.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\Full\search.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\Full\album.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\FullByTitle\album.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\FullByTitle\search.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\FullByArtist\album.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\FullByArtist\search.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleFull\album.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleFull\search.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleFull\searchtitle.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\album.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\search.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\searchtitle.json
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Siriona.Library.ServiceBus.pdb

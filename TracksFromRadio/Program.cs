@@ -12,6 +12,7 @@ using TracksCommon.Configurations.Radio;
 using TracksCommon.Gateways;
 using TracksCommon.Providers;
 using TracksFromRadio.Controllers;
+using TracksCommon.Http;
 
 namespace TracksFromRadio
 {
@@ -23,13 +24,17 @@ namespace TracksFromRadio
             var sql = new SqlConnectionProvider(conf.ConnectionString);
             var radioGateway = new RadioGateway(sql, conf.ServiceName);
             var logGateway = new LogGateway(sql);
-            var clientBus = ClientBus.Named(conf.ServiceName).Reliable(false).CreateBus();
+            var clientBus = ClientBus.Named(conf.ServiceName).DisableSubscriptionService().Reliable(false).CreateBus();
+            var httpPoster = new HttpPoster();
+            var radioParser = new HistoricRadioParser(httpPoster, conf, logGateway);
 
             var container = new UnityIocContainer();
             container.RegisterInstance(conf);
             container.RegisterInstance(radioGateway);
             container.RegisterInstance(logGateway);
             container.RegisterInstance(clientBus);
+            container.RegisterInstance(httpPoster);
+            container.RegisterInstance(radioParser);
 
             var server = HttpServer.Named(string.Format("Siriona.Listener.{0}", conf.ServiceName))
                         .At(string.Format("http://+:80/{0}/", conf.ServiceName))
@@ -39,7 +44,8 @@ namespace TracksFromRadio
 
             var serviceDescription = new ServiceDescription(string.Format("Tracks from radio {0}", conf.ServiceName), conf.ServiceName, conf.ServiceName);
 
-            var ctrl = new TrackController(radioGateway, logGateway, clientBus, conf);
+            var ctrl = new TrackController(radioGateway, logGateway, clientBus, conf, radioParser);
+            ctrl.Current();
             var timer = new System.Timers.Timer(int.Parse(conf.Timer));
             timer.Elapsed += (sender, arguments) =>
             {

@@ -11,5 +11,6 @@ namespace TracksCommon.Http
     {
         T RequestWithDeserialization<T>(string url, string method) where T: IDeserializer;
         string Request(string url, string method);
+        string Post(string url, Dictionary<string, string> datas);
     }
 }

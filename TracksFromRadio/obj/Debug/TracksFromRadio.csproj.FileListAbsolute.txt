@@ -42,3 +42,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\bin\Debug\Newto
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\obj\Debug\TracksFromRadio.csprojResolveAssemblyReference.cache
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\obj\Debug\TracksFromRadio.exe
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\obj\Debug\TracksFromRadio.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksFromRadio\bin\Debug\HtmlAgilityPack.xml

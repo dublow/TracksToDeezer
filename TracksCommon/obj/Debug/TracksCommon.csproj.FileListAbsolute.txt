@@ -26,3 +26,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\Newtonso
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.csprojResolveAssemblyReference.cache
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.dll
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\obj\Debug\TracksCommon.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksCommon\bin\Debug\HtmlAgilityPack.xml

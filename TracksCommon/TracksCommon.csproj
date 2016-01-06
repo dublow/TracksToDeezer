@@ -34,6 +34,10 @@
       <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -89,6 +93,7 @@
     <Compile Include="Filters\DeezerFullFilter.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="Filters\BaseFilter.cs" />
+    <Compile Include="Gateways\IRadioParser.cs" />
     <Compile Include="Gateways\IStatGateway.cs" />
     <Compile Include="Gateways\LogGateway.cs" />
     <Compile Include="Gateways\ApiGateway.cs" />
@@ -98,6 +103,8 @@
     <Compile Include="Gateways\RadioGateway.cs" />
     <Compile Include="Gateways\IApiGateway.cs" />
     <Compile Include="Gateways\IDeezerGateway.cs" />
+    <Compile Include="Gateways\HistoricRadioParser.cs" />
+    <Compile Include="Gateways\RadioParser.cs" />
     <Compile Include="Gateways\StatGateway.cs" />
     <Compile Include="Http\HttpPoster.cs" />
     <Compile Include="Http\IHttpPoster.cs" />
