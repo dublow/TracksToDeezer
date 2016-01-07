@@ -10,41 +10,44 @@ namespace TracksCommon.Http
 {
     public class HttpPoster : IHttpPoster
     {
-        public T RequestWithDeserialization<T>(string url, string method) where T : IDeserializer
+        public T Get<T>(string url) where T : IDeserializer
         {
-            string result = Request(url, method);
+            string result = Request(url, "GET", null);
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(result);
         }
 
-        public string Request(string url, string method)
+        public T Post<T>(string url, Dictionary<string, string> datas) where T : IDeserializer
         {
-            var webRequest = WebRequest.Create(url);
-            webRequest.Method = method;
+            string result = Request(url, "POST", datas);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(result);
+        }
 
-            using (var webResponse = webRequest.GetResponse())
-            {
-                using (var streamReader = new StreamReader(webResponse.GetResponseStream()))
-                {
-                    return streamReader.ReadToEnd();
-                }
-            }
+        public string Get(string url)
+        {
+            return Request(url, "GET", null);
         }
 
         public string Post(string url, Dictionary<string, string> datas)
         {
-            var dataForm = datas.Aggregate(new StringBuilder(), (cur, next) => { return cur.AppendFormat("{0}={1}&", next.Key, next.Value); });
-            dataForm.Length = dataForm.Length - 1;
-            var streamData = Encoding.UTF8.GetBytes(dataForm.ToString());
+            return Request(url, "POST", datas);
+        }
 
+        public string Request(string url, string method, Dictionary<string, string> datas)
+        {
             var webRequest = WebRequest.Create(url);
-
-            webRequest.Method = "POST";
-            webRequest.ContentType = "application/x-www-form-urlencoded";
-            webRequest.ContentLength = streamData.Length;
-
-            using (var stream = webRequest.GetRequestStream())
+            webRequest.Method = method;
+            if (method == "POST")
             {
-                stream.Write(streamData, 0, streamData.Length);
+                var streamData = GetFormDatas(datas);
+                if(streamData.Any())
+                {
+                    webRequest.ContentLength = streamData.Length;
+                    using (var stream = webRequest.GetRequestStream())
+                    {
+                        stream.Write(streamData, 0, streamData.Length);
+                    }
+                }
+                
             }
 
             using (var webResponse = webRequest.GetResponse())
@@ -54,7 +57,16 @@ namespace TracksCommon.Http
                     return streamReader.ReadToEnd();
                 }
             }
-            
+        }
+
+        private byte[] GetFormDatas(Dictionary<string, string> datas)
+        {
+            if (datas == null)
+                return Enumerable.Empty<byte>().ToArray();
+
+            var dataForm = datas.Aggregate(new StringBuilder(), (cur, next) => { return cur.AppendFormat("{0}={1}&", next.Key, next.Value); });
+            dataForm.Length = dataForm.Length - 1;
+            return Encoding.UTF8.GetBytes(dataForm.ToString());
         }
     }
 }

@@ -28,7 +28,7 @@ namespace TracksCommon.Gateways
         {
             var tokenUrl = string.Format(endpoints[Endpoint.AccessToken], appId, appSecret, code);
 
-            var result = httpPoster.Request(tokenUrl, "Post");
+            var result = httpPoster.Post(tokenUrl, null);
 
             var api = result.Split(new[] { "&" }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -43,7 +43,7 @@ namespace TracksCommon.Gateways
         public DeezerUser Me(string accessToken)
         {
             var url = string.Format(endpoints[Endpoint.Me], accessToken);
-            return httpPoster.RequestWithDeserialization<DeezerUser>(url, "GET");
+            return httpPoster.Get<DeezerUser>(url);
         }
   
         public DeezerSearchItem SearchTracks(string artist, string title)
@@ -52,7 +52,7 @@ namespace TracksCommon.Gateways
 
             foreach (var search in searchs)
             {
-                var deezerSearch = httpPoster.RequestWithDeserialization<DeezerSearch>(search.GetUrl(artist, title), "GET");
+                var deezerSearch = httpPoster.Get<DeezerSearch>(search.GetUrl(artist, title));
                 result = search.Filtering(deezerSearch, artist, title);
 
                 if(result != null)
@@ -65,7 +65,7 @@ namespace TracksCommon.Gateways
         public DeezerSearchItem GetTrack(string trackId)
         {
             var url = string.Format(endpoints[Endpoint.Track], trackId);
-            var result = httpPoster.RequestWithDeserialization<DeezerSearchItem>(url, "GET");
+            var result = httpPoster.Get<DeezerSearchItem>(url);
 
             return result;
         }
@@ -73,7 +73,7 @@ namespace TracksCommon.Gateways
         public Playlist GetPlaylist(string accessToken, string name)
         {
             var url = string.Format(endpoints[Endpoint.GetPlaylist], accessToken);
-            var playlists = httpPoster.RequestWithDeserialization<DeezerPlaylist>(url, "GET");
+            var playlists = httpPoster.Get<DeezerPlaylist>(url);
 
             return (from item in playlists.Data where item.Title == name select item).SingleOrDefault();
         }
@@ -81,21 +81,21 @@ namespace TracksCommon.Gateways
         public Playlist CreatePlaylist(string accessToken, string name)
         {
             var url = string.Format(endpoints[Endpoint.CreatePlaylist], accessToken, name);
-            return httpPoster.RequestWithDeserialization<Playlist>(url, "POST");
+            return httpPoster.Post<Playlist>(url, null);
         }
 
         public string AddToPlaylist(int id, string playlistId, string trackId, string accessToken, string searchMessage)
         {
             var url = string.Format(endpoints[Endpoint.AddToPlaylist], playlistId, accessToken, trackId);
 
-            var result = httpPoster.Request(url, "POST");
+            var result = httpPoster.Post(url, null);
             return string.Format("{0} - Playlist: {1}", searchMessage, result);
         }
 
         public IEnumerable<Genre> GetGenres(string albumId)
         {
             var url = string.Format(endpoints[Endpoint.Album], albumId);
-            var response = httpPoster.Request(url, "GET");
+            var response = httpPoster.Get(url);
             var jObject = JObject.Parse(response);
 
             if (jObject["genre_id"].ToString() == "-1")

@@ -36,3 +36,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.csprojResolveAssemblyReference.cache
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.exe
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\obj\Debug\TracksToDeezer.Tools.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tools\bin\Debug\HtmlAgilityPack.xml

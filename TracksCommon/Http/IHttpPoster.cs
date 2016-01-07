@@ -9,8 +9,9 @@ namespace TracksCommon.Http
 {
     public interface IHttpPoster
     {
-        T RequestWithDeserialization<T>(string url, string method) where T: IDeserializer;
-        string Request(string url, string method);
+        T Get<T>(string url) where T: IDeserializer;
+        string Get(string url);
+        T Post<T>(string url, Dictionary<string, string> datas) where T : IDeserializer;
         string Post(string url, Dictionary<string, string> datas);
     }
 }

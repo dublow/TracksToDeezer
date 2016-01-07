@@ -89,3 +89,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\search.json
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Datas\TitleByTitle\searchtitle.json
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer.Tests\bin\Debug\HtmlAgilityPack.xml

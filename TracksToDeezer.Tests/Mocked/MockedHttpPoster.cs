@@ -28,46 +28,67 @@ namespace TracksToDeezer.Tests.Mocked
             get
             {
                 httpPoster
-                    .Setup(x => x.Request(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(Request);
+                    .Setup(x => x.Get(It.IsAny<string>()))
+                    .Returns<string>(Request);
 
                 httpPoster
-                    .Setup(x => x.RequestWithDeserialization<DeezerSearch>(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(RequestWithDeserialization<DeezerSearch>);
+                    .Setup(x => x.Post(It.IsAny<string>(), It.IsAny<Dictionary<string, string>>()))
+                    .Returns<string, Dictionary<string, string>>(Request);
 
                 httpPoster
-                    .Setup(x => x.RequestWithDeserialization<DeezerSearchItem>(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(RequestWithDeserialization<DeezerSearchItem>);
+                    .Setup(x => x.Get<DeezerUser>(It.IsAny<string>()))
+                    .Returns<string>(RequestWithDeserialization<DeezerUser>);
 
                 httpPoster
-                    .Setup(x => x.RequestWithDeserialization<DeezerUser>(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(RequestWithDeserialization<DeezerUser>);
+                    .Setup(x => x.Get<DeezerSearchItem>(It.IsAny<string>()))
+                    .Returns<string>(RequestWithDeserialization<DeezerSearchItem>);
 
                 httpPoster
-                    .Setup(x => x.RequestWithDeserialization<DeezerPlaylist>(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(RequestWithDeserialization<DeezerPlaylist>);
+                    .Setup(x => x.Get<Playlist>(It.IsAny<string>()))
+                    .Returns<string>(RequestWithDeserialization<Playlist>);
 
                 httpPoster
-                    .Setup(x => x.RequestWithDeserialization<Playlist>(It.IsAny<string>(), It.IsIn("GET", "POST")))
-                    .Returns<string, string>(RequestWithDeserialization<Playlist>);
+                    .Setup(x => x.Post<Playlist>(It.IsAny<string>(), It.IsAny<Dictionary<string, string>>()))
+                    .Returns<string, Dictionary<string, string>>(RequestWithDeserialization<Playlist>);
+
+                httpPoster
+                    .Setup(x => x.Get<DeezerSearch>(It.IsAny<string>()))
+                    .Returns<string>(RequestWithDeserialization<DeezerSearch>);
+
+                httpPoster
+                    .Setup(x => x.Get<DeezerPlaylist>(It.IsAny<string>()))
+                    .Returns<string>(RequestWithDeserialization<DeezerPlaylist>);
 
                 return httpPoster.Object;
             }
         }
 
-        private string Request(string url, string method)
+        private string Request(string url)
         {
             return GetFile(url);
         }
 
-        private T RequestWithDeserialization<T>(string url, string method)
+        private string Request(string url, Dictionary<string, string> data)
+        {
+            return GetFile(url);
+        }
+
+        private T RequestWithDeserialization<T>(string url)
+        {
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(GetFile(url));
+        }
+
+        private T RequestWithDeserialization<T>(string url, Dictionary<string, string> data)
         {
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(GetFile(url));
         }
 
         private string GetFile(string path)
         {
-            return File.ReadAllText(path);
+            string executableLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string location = Path.Combine(executableLocation, path);
+            return File.ReadAllText(location);
+            //return File.ReadAllText(path);
         }
     }
 }

@@ -28,7 +28,7 @@ namespace TracksCommon.Gateways
         }
         public IEnumerable<SongFromRadio> Parse()
         {
-            var data = httpPoster.Request(radioConfiguration.RadioUrl, "GET");
+            var data = httpPoster.Get(radioConfiguration.RadioUrl);
             if (radioConfiguration.Debug)
                 logGateway.AddLog(Log.Info(data));
 

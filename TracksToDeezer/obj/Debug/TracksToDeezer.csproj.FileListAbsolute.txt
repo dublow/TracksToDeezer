@@ -44,3 +44,6 @@ C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Micros
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.pdb
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.xml
 C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\Siriona.Library.ServiceBus.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\HtmlAgilityPack.dll
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\nicolas\Documents\GitHub\TracksToDeezer\TracksToDeezer\bin\Debug\HtmlAgilityPack.xml
